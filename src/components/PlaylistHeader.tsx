@@ -1,0 +1,60 @@
+import { Play, Heart } from 'lucide-react';
+import { motion } from 'motion/react';
+
+
+interface PlaylistHeaderProps {
+  title: string;
+  description: string;
+  coverGradient: string;
+  projectCount: number;
+  onPlayAll: () => void;
+}
+
+export function PlaylistHeader({ title, description, coverGradient, projectCount, onPlayAll }: PlaylistHeaderProps) {
+  return (
+    <div 
+      className="relative h-64 md:h-80 mb-6 rounded-lg overflow-hidden"
+      style={{
+        background: `linear-gradient(135deg, ${coverGradient})`
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
+      
+      <div className="relative h-full flex items-end p-4 md:p-8">
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-xs md:text-sm uppercase tracking-wider mb-2 text-white/80"
+          >
+            Playlist
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-white mb-4 text-[28px] md:text-[48px]"
+          >
+            {title}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-white/80 mb-4 max-w-2xl text-sm md:text-base"
+          >
+            {description}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-xs md:text-sm text-white/60"
+          >
+            {projectCount} {projectCount === 1 ? 'projet' : 'projets'}
+          </motion.p>
+        </div>
+      </div>
+    </div>
+  );
+}
