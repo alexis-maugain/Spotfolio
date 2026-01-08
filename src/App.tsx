@@ -163,7 +163,7 @@ export default function App() {
               onClick={() => setActiveView('about')}
               className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white flex-shrink-0 cursor-pointer"
             >
-              <img src="./assets/logo.png" alt="Profile" className="w-8 h-8 rounded-full object-cover" />
+              <img src="./assets/logo.svg" alt="Profile" className="w-8 h-8 rounded-full object-cover" />
             </motion.button>
 
             {/* Filter Pills */}
