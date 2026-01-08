@@ -55,9 +55,25 @@
     build: {
       target: 'esnext',
       outDir: 'dist',
+      assetsInlineLimit: 4096,
+      rollupOptions: {
+        output: {
+          assetFileNames: 'assets/[name].[hash][extname]',
+          chunkFileNames: 'js/[name].[hash].js',
+          entryFileNames: 'js/[name].[hash].js',
+        },
+      },
     },
     server: {
       port: 3000,
       open: true,
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
+    },
+    preview: {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
     },
   });
