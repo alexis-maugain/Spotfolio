@@ -247,7 +247,7 @@ export const projects: Project[] = [
     id: '15',
     title: 'Refonte site Sauce Martin',
     category: 'UI/UX Design',
-    cover: './assets/projets/sauce-martin/hero.png',
+    cover: './assets/projets/sauce-martin/cover.png',
     images: [
       './assets/projets/sauce-martin/audit.png',
       './assets/projets/sauce-martin/catalogue.png',
