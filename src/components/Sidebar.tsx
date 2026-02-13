@@ -15,7 +15,7 @@ export function Sidebar({ activeView, onNavigate, favoriteProjects }: SidebarPro
 
   const playlists = [
     { id: 'ui-ux', label: 'UX/UI Design', icon: Palette },
-    { id: 'web', label: 'Web', icon: Code },
+    { id: 'dev', label: 'Dev', icon: Code },
     { id: 'motion', label: 'Motion & 3D', icon: Film }
   ];
 

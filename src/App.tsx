@@ -96,7 +96,7 @@ export default function App() {
     if (activeView === 'ui-ux') {
       return 'Une collection de projets centrés sur l\'expérience utilisateur et le design d\'interface.';
     }
-    if (activeView === 'web') {
+    if (activeView === 'dev') {
       return 'Développements web, applications et expériences digitales interactives.';
     }
     if (activeView === 'motion') {
@@ -114,7 +114,7 @@ export default function App() {
   const getGradient = (): string => {
     if (activeView === 'top-france') return '#1DB954, #1ed760';
     if (activeView === 'ui-ux') return '#9333EA, #C026D3';
-    if (activeView === 'web') return '#3B82F6, #06B6D4';
+    if (activeView === 'dev') return '#3B82F6, #06B6D4';
     if (activeView === 'motion') return '#F59E0B, #EF4444';
     return '#1DB954, #1ed760';
   };
@@ -132,14 +132,14 @@ export default function App() {
     { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[5]?.cover },
     { id: 'top-france', title: 'Top France', gradient: '#1DB954, #1ed760', cover: projects[0]?.cover },
     { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[1]?.cover },
-    { id: 'web', title: 'Web', gradient: '#3B82F6, #06B6D4', cover: projects[2]?.cover },
+    { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[2]?.cover },
     { id: 'motion', title: 'Motion & 3D', gradient: '#F59E0B, #EF4444', cover: projects[3]?.cover },
   ], []);
   
   const categories = useMemo(() => [
         { label: 'Tout', view: 'all' },
         { label: 'UI/UX', view: 'ui-ux' },
-        { label: 'Web', view: 'web' },
+        { label: 'Dev', view: 'dev' },
         { label: 'Motion', view: 'motion' },
         { label: '3D', view: 'motion' }
   ], []);

@@ -320,8 +320,8 @@ export const playlists: Playlist[] = [
     projects: ['1', '3', '5', '6','7', '8', '10', '12', '15', '16', '17']
   },
   {
-    id: 'web',
-    name: 'Web',
+    id: 'dev',
+    name: 'Dev',
     icon: 'code',
     projects: ['1', '2', '3', '4', '5', '7', '11']
   },
