@@ -288,7 +288,7 @@ export const projects: Project[] = [
   {
     id: '17',
     title: 'RocamaTour',
-    category: 'VR/3D',
+    category: 'UX/UI Design',
     cover: './assets/projets/rocamatour/cover.png',
     images: [
       './assets/projets/rocamatour/hero.png',
