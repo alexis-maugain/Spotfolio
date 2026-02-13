@@ -62,7 +62,7 @@ export function ProjectView({
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
+            className="fixed top-6 right-6 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-50 cursor-pointer transition-all"
           >
             <X size={24} />
           </button>
@@ -165,7 +165,7 @@ export function ProjectView({
                       <video 
                         src={img}
                         controls
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                         preload="metadata"
                       >
                         Votre navigateur ne supporte pas la lecture de vidéos.
@@ -174,7 +174,7 @@ export function ProjectView({
                       <img 
                         src={img} 
                         alt={`${project.title} - Image ${index + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                        className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 cursor-pointer"
                         loading="lazy"
                         onClick={() => openLightbox(img)}
                       />
@@ -218,7 +218,7 @@ export function ProjectView({
             <button
               onClick={(e) => { e.stopPropagation(); goToPrev(); }}
               className="absolute left-4 md:left-8 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
-              style={{ top: '50%', transform: 'translateY(-50%)' }}
+              style={{ top: '50%', transform: 'translateY(-50%) translateY(-1.5rem)' }}
             >
               <ChevronLeft size={24} />
             </button>
@@ -230,19 +230,19 @@ export function ProjectView({
             <button
               onClick={(e) => { e.stopPropagation(); goToNext(); }}
               className="absolute right-4 md:right-8 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
-              style={{ top: '50%', transform: 'translateY(-50%)' }}
+              style={{ top: '50%', transform: 'translateY(-50%) translateY(-1.5rem)' }}
             >
               <ChevronRight size={24} />
             </button>
           )}
 
           {/* Image (centered) */}
-          <div className="w-full h-full flex items-center justify-center px-16">
+          <div className="w-full h-full flex items-center justify-center px-16 pb-12">
             <img
               src={imageOnly[lightboxIndex]}
               alt={`${project.title} - Image ${lightboxIndex + 1}`}
               className="object-contain rounded-lg shadow-2xl animate-fade-in-scale"
-              style={{ maxWidth: '85vw', maxHeight: '85vh' }}
+              style={{ maxWidth: '85vw', maxHeight: '80vh', marginTop: '-3rem' }}
               onClick={(e) => e.stopPropagation()}
             />
           </div>

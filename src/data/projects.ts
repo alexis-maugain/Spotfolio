@@ -8,7 +8,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'PokeDuel',
     category: 'UI/UX Design',
-    cover: './assets/projets/pokeduel/mockup.png',
+    cover: './assets/projets/pokeduel/mockup.webp',
     images: [
       './assets/projets/pokeduel/accueil.webp',
       './assets/projets/pokeduel/Boutique.webp',
@@ -21,8 +21,8 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     description: 'Il nous a été demandé de concevoir un concept d\'application mobile dans l\'univers de notre choix. L\'application devait comporter au moins 5 écrans fonctionnels, incluant des éléments interactifs tels que des boutons, des formulaires et des animations. Le design devait être cohérent avec l\'univers choisi et offrir une expérience utilisateur fluide et intuitive.',
-    problem: '',
-    process: '',
+    problem: 'Les applications mobiles liées à l\'univers Pokémon manquent souvent d\'une expérience sociale et compétitive immersive. Il fallait concevoir une application qui combine collection, combat et interaction entre joueurs, tout en offrant une navigation intuitive et un design fidèle à l\'univers.',
+    process: 'Recherche sur l\'univers Pokémon et analyse des applications existantes, définition des parcours utilisateurs clés (inscription, boutique, combat, messagerie), création de wireframes puis de maquettes haute fidélité sur Figma, prototypage interactif avec animations et micro-interactions, tests utilisateurs et itérations.',
     color: '#059669'
   },
 
@@ -37,8 +37,8 @@ export const projects: Project[] = [
     role: '',
     tools: ['HTML', 'A-Frame', 'Poly.pizza', 'Sketchfab'],
     description: 'Il nous a été demandé de concevoir une expérience de réalité virtuelle accessible via un navigateur web dans le style graphique d\'un artiste. Le projet visait à démontrer les possibilités offertes par la VR sur le web. Voici le lien de l\'expérience : "https://alexis-maugain.github.io/VR/"',
-    problem: '',
-    process: '',
+    problem: 'La réalité virtuelle reste souvent inaccessible au grand public, nécessitant des équipements coûteux. Le défi était de créer une expérience VR immersive directement dans le navigateur, tout en respectant un style graphique artistique cohérent et en maintenant de bonnes performances.',
+    process: 'Choix du style artistique de référence, recherche et sélection de modèles 3D sur Poly.pizza et Sketchfab, mise en place de la scène VR avec A-Frame en HTML, optimisation des assets 3D pour le web, tests sur différents navigateurs et appareils, déploiement sur GitHub Pages.',
     color: '#d53d3dff'
   },
 
@@ -56,8 +56,8 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     description: 'Olive Oil, marque d\'huile d\'olive 100 % italienne, lance sa nouvelle huile premium avec des ingrédients haut de gamme. Pour accompagner ce lancement, ils souhaitent créer un site internet reflétant leur encrage territorial ainsi que l\'univers prestigieux de la marque, destiné à une clientèle exigeante. Le design du site devra être élégant, moderne et raffiné, tout en respectant l\'identité visuelle existante (couleurs, typographie, logo).Le contenu présentera de manière claire et originale la marque, ses valeurs et son produit. L\'expérience utilisateur devra inciter à l’achat, tout en véhiculant une ambiance exclusive et sophistiquée.',
-    problem: '',
-    process: '',
+    problem: 'La marque Olive Oil souhaitait lancer un nouveau produit premium mais ne disposait pas d\'une vitrine digitale à la hauteur de son positionnement haut de gamme. Le site devait transmettre une image de luxe et d\'authenticité italienne tout en incitant à l\'achat.',
+    process: 'Analyse de l\'identité visuelle existante et du positionnement de la marque, benchmark de sites premium dans le secteur alimentaire, conception d\'une one page élégante sur Figma avec une hiérarchie visuelle travaillée, choix typographiques et chromatiques raffinés, mise en avant du produit et des valeurs de la marque.',
     color: '#ff1fe5ff'
   },
 
@@ -66,19 +66,19 @@ export const projects: Project[] = [
     id: '4',
     title: 'RocamaTour',
     category: 'UX/UI Design',
-    cover: './assets/projets/rocamatour/cover.png',
+    cover: './assets/projets/rocamatour/cover.webp',
     images: [
-      './assets/projets/rocamatour/hero.png',
-      './assets/projets/rocamatour/post1.png',
-      './assets/projets/rocamatour/post2.png',
+      './assets/projets/rocamatour/hero.webp',
+      './assets/projets/rocamatour/post1.webp',
+      './assets/projets/rocamatour/post2.webp',
       './assets/projets/rocamatour/motion_rocamatour.mp4',
 
     ],
     role: '',
     tools: ['Figma', 'After effects'],
     description: 'Création d\'une expérience immersive pour le site web de RocamaTour, un concept évènement inventé par nous même qui propose un mélange entre tourisme et course à pied',
-    problem: '',
-    process: '',
+    problem: 'Il n\'existait aucune identité visuelle ni plateforme pour ce concept événementiel inédit mêlant tourisme et course à pied. Il fallait créer de toute pièce un univers graphique attractif et un site web capable de susciter l\'intérêt et l\'inscription des participants.',
+    process: 'Brainstorming et définition du concept événementiel, création de l\'identité visuelle complète, conception des maquettes du site sur Figma, réalisation d\'une vidéo motion design promotionnelle sur After Effects, création de visuels pour les réseaux sociaux, prototypage interactif.',
     color: 'rgb(2, 97, 57)'
   },
 
@@ -86,8 +86,9 @@ export const projects: Project[] = [
     id: '5',
     title: 'Subway Surfer',
     category: 'UX/UI design',
-    cover: './assets/projets/subway-surfer/cover.png',
+    cover: './assets/projets/subway-surfer/cover.webp',
     images: [
+      './assets/projets/subway-surfer/jetpack.webp',
       './assets/projets/subway-surfer/accueil.webp',
       './assets/projets/subway-surfer/logo.webp',
       './assets/projets/subway-surfer/objets3D_1.webp',
@@ -100,8 +101,8 @@ export const projects: Project[] = [
     role: 'Motion Designer, Video Editor & Web Designer',
     tools: ['After Effects', 'Premiere Pro','WordPress', 'Figma', 'Blender'],
     description: 'Il nous a été demandé de créer, développer et promouvoir un site web e-commerce inspiré des plateformes comme Le Bon Coin, Vinted, … adapté à l\'univers d\'un jeu vidéo emblématique de votre choix (par exemple : Mario, Zelda, etc.).',
-    problem: '',
-    process: '',
+    problem: 'Concevoir un site e-commerce crédible et cohérent dans l\'univers de Subway Surfer, tout en intégrant des fonctionnalités de vente en ligne classiques. Le défi était d\'allier l\'aspect ludique du jeu avec une expérience d\'achat fonctionnelle et intuitive.',
+    process: 'Choix de l\'univers Subway Surfer, conception des maquettes UI/UX sur Figma, modélisation d\'objets 3D sur Blender pour enrichir le site, développement du site sur WordPress, création de vidéos promotionnelles avec After Effects et Premiere Pro, réalisation du storyboard et production du contenu visuel.',
     color: '#F59E0B'
   },
 
@@ -140,27 +141,27 @@ export const projects: Project[] = [
     role: 'Product Designer',
     tools: ['PSPlay.js', 'HTML', 'CSS', 'Tailwind', 'JAVASCRIPT', 'Figma'],
     description: 'Un jeu 2D developper en javascrit avec P5Play.js qui sert à faire de la prévention contre la pullution digital.Dans Ce je on incarne Zippy une petite souris qui lutter contre malware et mail frauduleux',
-    problem: '',
-    process: '',
+    problem: 'La pollution numérique est un sujet peu connu du grand public, notamment chez les jeunes. Il fallait trouver un moyen ludique et engageant de sensibiliser à cette problématique, tout en rendant le message accessible et mémorable à travers le jeu vidéo.',
+    process: 'Conception du game design et du personnage Zippy, création des assets graphiques et de l\'affiche promotionnelle sur Figma, développement du jeu en JavaScript avec la librairie P5Play.js, intégration du HTML/CSS avec Tailwind, tests de gameplay et équilibrage des niveaux, création du site vitrine.',
     color: '#EC4899'
   },
   {
     id: '8',
     title: 'Danniel Wellington',
     category: 'UI/UX Design',
-    cover: './assets/projets/danniel-wellington/Cover.png',
+    cover: './assets/projets/danniel-wellington/Cover.webp',
     images: [
       './assets/projets/danniel-wellington/pages.webp',
-      './assets/projets/danniel-wellington/montres.png',
-      './assets/projets/danniel-wellington/avis.png',
-      './assets/projets/danniel-wellington/footer.png',
+      './assets/projets/danniel-wellington/montres.webp',
+      './assets/projets/danniel-wellington/avis.webp',
+      './assets/projets/danniel-wellington/footer.webp',
 
     ],
     role: 'UI/UX Designer & Developer',
     tools: ['Figma', 'WordPress'],
     description: 'Il nous a été demandé par binômes de concevoir et de développer des parcours utilisateurs au sein d\'un système d\'information, en combinant le développement web, le design d\'expérience et la gestion de projet. Nous devions créer un site WordPress de type "click & collect" pour une enseigne choisie en gardant la même charte graphique.',
-    problem: '',
-    process: '',
+    problem: 'Daniel Wellington ne disposait pas d\'un système de click & collect en ligne. Il fallait concevoir un parcours utilisateur complet permettant la consultation du catalogue, la sélection de produits et la réservation en magasin, tout en respectant fidèlement la charte graphique premium de la marque.',
+    process: 'Analyse de la charte graphique existante de Daniel Wellington, conception des parcours utilisateurs et wireframes sur Figma, création des maquettes haute fidélité, développement et intégration sur WordPress avec les fonctionnalités click & collect, gestion de projet en binôme, tests et livraison.',
     color: '#06B6D4'
   },
   {
@@ -180,8 +181,8 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
     description: 'Il nous a été demandé de créer et de mettre en place une campagne de communication visuelle pour la création d\'un \'Bar à thème\'. Le thème du bar et la ville m\'ont été imposés : Bar médiéval à Anvers en Belgique.',
-    problem: '',
-    process: '',
+    problem: 'Créer une identité visuelle complète et une campagne de communication pour un bar à thème médiéval fictif situé à Anvers. Le défi était de concevoir un univers graphique immersif et cohérent qui donne envie aux clients de découvrir ce lieu unique.',
+    process: 'Recherche d\'inspiration sur l\'univers médiéval et la ville d\'Anvers, création du nom et du concept du bar, conception du logo et de la charte graphique sur Illustrator et Photoshop, design des supports de communication (affiches, maquettes du lieu, quêtes du jour), prototypage de l\'interface digitale sur Figma.',
     color: '#8B5CF6'
   },
 
@@ -190,7 +191,7 @@ export const projects: Project[] = [
     id: '10',
     title: 'Digital Clean Up Day',
     category: 'UI/UX Design',
-    cover: './assets/projets/digital-cleanup/cover.png',
+    cover: './assets/projets/digital-cleanup/cover.webp',
     images: [
       './assets/projets/digital-cleanup/hero.webp',
       './assets/projets/digital-cleanup/Newsletter.webp',
@@ -201,8 +202,8 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
     description: 'Le prochain événement du Digital Clean Up aura lieu le 25 mars 2025. Pour l\'occasion, l\'organisation souhaite cibler les moins de 25 ans. Il nous a donc été demandé de promouvoir cette action.',
-    problem: '',
-    process: '',
+    problem: 'Le Digital Clean Up Day peine à toucher les jeunes de moins de 25 ans, peu sensibilisés à l\'impact environnemental du numérique. Il fallait concevoir une communication moderne et engageante capable de capter l\'attention de cette cible sur les canaux qu\'elle utilise.',
+    process: 'Analyse de la cible jeune et de ses habitudes digitales, conception d\'une landing page attractive sur Figma avec wireframes, création de visuels impactants sur Illustrator et Photoshop, réalisation d\'une animation motion design pour les réseaux sociaux, design d\'une newsletter engageante, prototypage interactif.',
     color: '#3aa217ff'
   },
 
@@ -229,7 +230,7 @@ export const projects: Project[] = [
     id: '12',
     title: 'Vidéo Carrefour Club',
     category: 'Motion Design',
-    cover: './assets/projets/carrefour-club/cover.png',
+    cover: './assets/projets/carrefour-club/cover.webp',
     images: [
       './assets/projets/carrefour-club/storyboard_versions.webp',
       './assets/projets/carrefour-club/storyboard_final.webp',
@@ -238,8 +239,8 @@ export const projects: Project[] = [
     role: 'Motion Designer',
     tools: ['Adobe Illustrator', 'After Effects'],
     description: 'Création d\'une vidéo promotionnelle pour le programme de fidélité "Carrefour Club". La vidéo vise à informer les clients des avantages exclusifs offerts par le programme et à encourager l\'inscription.',
-    problem: '',
-    process: '',
+    problem: 'Le programme de fidélité Carrefour Club manquait de visibilité auprès des clients. Il fallait créer un support vidéo dynamique et clair capable de présenter les avantages du programme et d\'inciter à l\'inscription de manière engageante.',
+    process: 'Analyse du brief et des messages clés à transmettre, création de plusieurs versions de storyboard, sélection et validation du storyboard final, conception des illustrations vectorielles sur Illustrator, animation et montage sur After Effects, ajustements et livraison de la vidéo finale.',
     color: '#3aa217ff'
   },
 
@@ -247,18 +248,18 @@ export const projects: Project[] = [
     id: '13',
     title: 'Refonte site Sauce Martin',
     category: 'UI/UX Design',
-    cover: './assets/projets/sauce-martin/cover.png',
+    cover: './assets/projets/sauce-martin/cover.webp',
     images: [
-      './assets/projets/sauce-martin/audit.png',
-      './assets/projets/sauce-martin/catalogue.png',
-      './assets/projets/sauce-martin/pimentomètre.png',
-      './assets/projets/sauce-martin/prototypes.png',
+      './assets/projets/sauce-martin/audit.webp',
+      './assets/projets/sauce-martin/catalogue.webp',
+      './assets/projets/sauce-martin/pimentomètre.webp',
+      './assets/projets/sauce-martin/prototypes.webp',
 
     ],
     role: 'Projet perso',
     tools: ['Figma'],
     description: 'Refonte du site web de la marque Sauce Martin',
-    problem: '',
+    problem: 'Le site existant de Sauce Martin ne reflétait pas l\'identité dynamique et artisanale de la marque. L\'ergonomie était peu optimisée, le catalogue produit difficile à parcourir et l\'expérience utilisateur globale nécessitait une modernisation complète.',
     process: 'Audit du site existant, identification des points d\'amélioration, création de maquettes UI sur Figma en respectant l\'identité visuelle de la marque, développement du site web avec une attention particulière portée au responsive design et à l\'expérience utilisateur, tests et ajustements.',
     color: 'rgb(2, 97, 57)'
   },
@@ -267,17 +268,17 @@ export const projects: Project[] = [
     id: '14',
     title: 'Le cube expérience VR',
     category: 'VR/3D',
-    cover: './assets/projets/lecube/cover.png',
+    cover: './assets/projets/lecube/cover.webp',
     images: [
-      './assets/projets/lecube/hotel.png',
-      './assets/projets/lecube/avion.png',
-      './assets/projets/lecube/storyboard.png',
+      './assets/projets/lecube/hotel.webp',
+      './assets/projets/lecube/avion.webp',
+      './assets/projets/lecube/storyboard.webp',
     ],
     role: '',
     tools: ['HTML', 'Figma'],
     description: 'Expérience de réalité virtuelle dans le cadre d’un partenariat entre la marque Rolex et le film Inception',
-    problem: '',
-    process: '',
+    problem: 'Créer une expérience VR immersive qui fusionne l\'univers luxueux de Rolex avec le monde onirique du film Inception. Le défi était de concevoir un parcours interactif captivant qui serve à la fois la marque et l\'univers cinématographique.',
+    process: 'Définition du concept narratif liant Rolex et Inception, création du storyboard détaillé, conception des environnements virtuels (hôtel, avion) sur Figma, développement de l\'expérience VR en HTML, optimisation pour une immersion fluide et cohérente, tests et ajustements.',
     color: 'rgb(2, 97, 57)'
   },
 
@@ -285,20 +286,20 @@ export const projects: Project[] = [
     id: '15',
     title: 'Unis Vers Tchouk',
     category: 'UI/UX Design',
-    cover: './assets/projets/unis-vers-tchouk/cover.png',
+    cover: './assets/projets/unis-vers-tchouk/cover.webp',
     images: [
-      './assets/projets/unis-vers-tchouk/hero.png',
-      './assets/projets/unis-vers-tchouk/newsletter.png',
-      './assets/projets/unis-vers-tchouk/footer.png',
-      './assets/projets/unis-vers-tchouk/prototype.png',
-      './assets/projets/unis-vers-tchouk/posts.png',
+      './assets/projets/unis-vers-tchouk/hero.webp',
+      './assets/projets/unis-vers-tchouk/newsletter.webp',
+      './assets/projets/unis-vers-tchouk/footer.webp',
+      './assets/projets/unis-vers-tchouk/prototype.webp',
+      './assets/projets/unis-vers-tchouk/posts.webp',
 
     ],
     role: '',
     tools: ['Figma', 'WordPress'],
     description: 'Audit et refonte du site web de l\'association Unis Vers Tchouk, qui promeut le tchoukball, un sport collectif dynamique. Le projet a consisté à analyser le site existant, identifier les points d\'amélioration en termes d\'ergonomie et de design, puis à créer une nouvelle interface utilisateur plus moderne et intuitive sur Figma. La refonte a également inclus le développement du site web avec une attention particulière portée au responsive design pour garantir une expérience optimale sur tous les appareils.',
-    problem: '',
-    process: '',
+    problem: 'Le site existant de l\'association Unis Vers Tchouk était vieillissant, peu ergonomique et ne mettait pas suffisamment en valeur le tchoukball. La navigation n\'était pas intuitive et le site n\'était pas optimisé pour le mobile, limitant la visibilité de l\'association.',
+    process: 'Audit complet du site existant avec identification des points faibles, benchmark de sites d\'associations sportives, conception de wireframes et maquettes modernes sur Figma, création de la newsletter et des visuels pour les réseaux sociaux, développement sur WordPress avec responsive design, tests multi-appareils.',
     color: 'rgb(2, 97, 57)'
   },
 
@@ -310,24 +311,24 @@ export const playlists: Playlist[] = [
     id: 'top-france',
     name: 'Top France',
     icon: 'trophy',
-    projects: ['11', '13', '14', '4']
+    projects: ['11', '13', '14', '12', '4']
   },
   {
     id: 'ui-ux',
     name: 'UX/UI Design',
     icon: 'palette',
-    projects: ['1','5', '3', '4', '7', '8', '10', '11', '13', '15']
+    projects: ['15', '13', '11', '10', '8', '7', '4', '3', '5', '1']
   },
   {
     id: 'dev',
     name: 'Dev',
     icon: 'code',
-    projects: ['2', '5', '7', '8', '11', '14', '15']
+    projects: ['15', '14', '11', '8', '7', '5', '2']
   },
   {
     id: 'motion',
     name: 'Motion & 3D',
     icon: 'film',
-    projects: ['4', '5', '6', '10', '12', '14']
+    projects: ['14', '12', '10', '6', '5', '4']
   }
 ];

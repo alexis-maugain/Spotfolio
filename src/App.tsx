@@ -56,7 +56,7 @@ export default function App() {
     }
     const playlist = playlists.find((pl) => pl.id === activeView);
     if (playlist) {
-      return projects.filter((p) => playlist.projects.includes(p.id));
+      return playlist.projects.map(id => projects.find(p => p.id === id)).filter(Boolean) as Project[];
     }
     return projects;
   }, [activeView, favoriteProjects]);
@@ -122,18 +122,22 @@ export default function App() {
   const filteredProjects = useMemo(() => getFilteredProjects(), [getFilteredProjects]);
 
   // Mémoïser les projets pour la page d'accueil
-  const recentProjects = useMemo(() => projects.slice(0, 6), []);
-  const trendingProjects = useMemo(() => [projects[1], projects[0], projects[3], projects[2], projects[4], projects[5]].filter(Boolean), []);
-  const topProjects = useMemo(() => [...projects].sort((a, b) => b.id.localeCompare(a.id)).slice(0, 6), []);
-  const uiuxProjects = useMemo(() => projects.filter(p => p.category.includes('UI/UX')).slice(0, 6), []);
+  const recentProjects = useMemo(() => [...projects].sort((a, b) => Number(b.id) - Number(a.id)).slice(0, 6), []);
+  const trendingProjects = useMemo(() => [projects[6], projects[0], projects[3], projects[2], projects[4], projects[5]].filter(Boolean), []);
+  const topProjects = useMemo(() => {
+    const topFrance = playlists.find(pl => pl.id === 'top-france');
+    if (!topFrance) return [];
+    return topFrance.projects.map(id => projects.find(p => p.id === id)).filter(Boolean) as Project[];
+  }, []);
+  const uiuxProjects = useMemo(() => projects.filter(p => p.category.includes('UI/UX')).sort((a, b) => Number(b.id) - Number(a.id)).slice(0, 6), []);
   
   const playlistsData = useMemo(() => [
-    { id: 'all', title: 'Tous les singles', gradient: '#EC4899, #8B5CF6', cover: projects[1]?.cover },
-    { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[4]?.cover },
+    { id: 'all', title: 'Tous les singles', gradient: '#EC4899, #8B5CF6', cover: projects[0]?.cover },
+    { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[3]?.cover },
     { id: 'top-france', title: 'Top France', gradient: '#1DB954, #1ed760', cover: projects[11]?.cover },
-    { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[13]?.cover },
-    { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[7]?.cover },
-    { id: 'motion', title: 'Motion & 3D', gradient: '#F59E0B, #EF4444', cover: projects[5]?.cover },
+    { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[12]?.cover },
+    { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[6]?.cover },
+    { id: 'motion', title: 'Motion & 3D', gradient: '#F59E0B, #EF4444', cover: projects[4]?.cover },
   ], []);
   
   const categories = useMemo(() => [
@@ -160,7 +164,7 @@ export default function App() {
               onClick={() => setActiveView('about')}
               className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white flex-shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-150"
             >
-              <img src="./assets/logo.png" alt="Profile" className="w-8 h-8 rounded-full object-cover" loading="lazy" />
+              <img src="./assets/logo.webp" alt="Profile" className="w-8 h-8 rounded-full object-cover" loading="lazy" />
             </button>
 
             {/* Filter Pills */}
