@@ -49,7 +49,7 @@ export default function App() {
 
   const getFilteredProjects = useCallback((): Project[] => {
     if (activeView === 'all') {
-      return projects;
+      return [...projects].sort((a, b) => Number(b.id) - Number(a.id));
     }
     if (activeView === 'favorites') {
       return projects.filter((p) => favoriteProjects.includes(p.id));

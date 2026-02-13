@@ -116,22 +116,7 @@ export const projects: Project[] = [
     process: '',
     color: '#8B5CF6'
   },
-  {
-    id: '7',
-    title: 'OpenData University',
-    category: 'UI/UX Design',
-    cover: './assets/projets/data-visualisation/cover.webp',
-    images: [
-      './assets/projets/data-visualisation/Affiche1.webp',
-      './assets/projets/data-visualisation/Affiche2.webp',
-    ],
-    role: 'UI/UX Designer',
-    tools: ['Figma', 'HTML', 'CSS', 'GSAP', 'Lottie'],
-    description: 'Dans le cadre d\'une collaboration avec OpenData University, nous avez été sollicités pour créer un ensemble de supports numériques en groupe de trois visant à informer et sensibiliser le public sur un des thèmes liés à la culture.',
-    problem: '',
-    process: '',
-    color: '#3B82F6'
-  },
+
   {
     id: '8',
     title: 'PokeDuel',
@@ -317,13 +302,13 @@ export const playlists: Playlist[] = [
     id: 'ui-ux',
     name: 'UX/UI Design',
     icon: 'palette',
-    projects: ['1', '3', '5', '6','7', '8', '10', '12', '15', '16', '17']
+    projects: ['1', '3', '5', '6', '8', '10', '12', '15', '16', '17']
   },
   {
     id: 'dev',
     name: 'Dev',
     icon: 'code',
-    projects: ['1', '2', '3', '4', '5', '7', '11']
+    projects: ['1', '2', '3', '4', '5', '11']
   },
   {
     id: 'motion',
