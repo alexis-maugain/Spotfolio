@@ -2,123 +2,10 @@ import { Project, Playlist } from '../types';
 
 
 export const projects: Project[] = [
-  {
-    id: '1', 
-    title: 'Fief des Vins',
-    category: 'UI/UX Design',
-    cover: './assets/projets/fiefdesvins/cover.webp',
-    images: [
-      './assets/projets/fiefdesvins/fiefdesvins.webp',
-      './assets/projets/fiefdesvins/hero.webp',
-      './assets/projets/fiefdesvins/contact.webp',
-      './assets/projets/fiefdesvins/livraison-entreprise.webp',
-    ],
-    role: 'Lead UX/UI Designer',
-    tools: ['Figma', 'WordPress'],
-    description: 'Refaire son site web en intégrant une partie retreinte pour les professionnels, pour qu\'ils puissent passer commande pour leurs évènements',
-    problem: 'Le site web existant ne répondait plus aux besoins du client, notamment l\'absence d\'un espace professionnel dédié permettant aux restaurateurs et organisateurs d\'événements de passer commande facilement. L\'interface n\'était pas optimisée pour le responsive design et l\'expérience utilisateur était peu intuitive.',
-    process: 'Analyse des besoins du client chez Phénix Studio, conception des maquettes UI sur Figma en respectant l\'identité visuelle de la cave, développement d\'un espace client professionnel sécurisé, intégration sur WordPress avec attention portée au responsive design et à l\'accessibilité, tests utilisateurs et ajustements.',
-    color: '#1DB954'
-  },
-  {
-    id: '2',
-    title: 'Livre de cuisine',
-    category: 'Print Design',
-    cover: './assets/projets/livre-recette/mockup.webp',
-    images: [
-      './assets/projets/livre-recette/couverture.webp',
-      './assets/projets/livre-recette/page-recette.webp',
-      './assets/projets/livre-recette/Sommaire.webp',
-    ],
-    role: 'Graphic Designer',
-    tools: ['Indesign'],
-    description: 'Création d\'un livre de recettes.',
-    problem: 'Besoin de créer un livre de cuisine attractif et structuré pour valoriser une collection de recettes. La mise en page devait être claire, esthétique et faciliter la lecture des étapes de préparation.',
-    process: 'Définition de la structure éditoriale et du concept graphique, création d\'une charte graphique cohérente sur InDesign, mise en page des recettes avec hiérarchie visuelle, sélection et intégration des visuels, optimisation pour l\'impression.',
-    color: '#9333EA'
-  },
-  {
-    id: '3',
-    title: 'Subway Surfer',
-    category: 'Motion Design',
-    cover: './assets/projets/subway-surfer/cover.png',
-    images: [
-      './assets/projets/subway-surfer/accueil.webp',
-      './assets/projets/subway-surfer/logo.webp',
-      './assets/projets/subway-surfer/objets3D_1.webp',
-      './assets/projets/subway-surfer/objets3D_2.webp',
-      './assets/projets/subway-surfer/storyboard.webp',
-      './assets/projets/subway-surfer/skate-story.mp4',
 
 
-    ],
-    role: 'Motion Designer, Video Editor & Web Designer',
-    tools: ['After Effects', 'Premiere Pro','WordPress', 'Figma', 'Blender'],
-    description: 'Il nous a été demandé de créer, développer et promouvoir un site web e-commerce inspiré des plateformes comme Le Bon Coin, Vinted, … adapté à l\'univers d\'un jeu vidéo emblématique de votre choix (par exemple : Mario, Zelda, etc.).',
-    problem: '',
-    process: '',
-    color: '#F59E0B'
-  },
-  {
-    id: '4',
-    title: 'Nuit du Code',
-    category: 'UI/UX Design',
-    cover: './assets/projets/nuitcode/nuitcode.webp',
-    images: [
-  
-      './assets/projets/nuitcode/gameplay.webp',
-      './assets/projets/nuitcode/hero.webp',
-      './assets/projets/nuitcode/intro.webp',
-      './assets/projets/nuitcode/touches.webp',
-      './assets/projets/nuitcode/trophées.webp',
-      './assets/projets/nuitcode/Affiche.webp',
-    ],
-    role: 'Product Designer',
-    tools: ['PSPlay.js', 'HTML', 'CSS', 'Tailwind', 'JAVASCRIPT', 'Figma'],
-    description: 'Un jeu 2D developper en javascrit avec P5Play.js qui sert à faire de la prévention contre la pullution digital.Dans Ce je on incarne Zippy une petite souris qui lutter contre malware et mail frauduleux',
-    problem: '',
-    process: '',
-    color: '#EC4899'
-  },
-  {
-    id: '5',
-    title: 'Danniel Wellington',
-    category: 'UI/UX Design',
-    cover: './assets/projets/danniel-wellington/Cover.png',
-    images: [
-      './assets/projets/danniel-wellington/pages.webp',
-    ],
-    role: 'UI/UX Designer & Developer',
-    tools: ['Figma', 'WordPress'],
-    description: 'Il nous a été demandé par binômes de concevoir et de développer des parcours utilisateurs au sein d\'un système d\'information, en combinant le développement web, le design d\'expérience et la gestion de projet. Nous devions créer un site WordPress de type "click & collect" pour une enseigne choisie en gardant la même charte graphique.',
-    problem: '',
-    process: '',
-    color: '#06B6D4'
-  },
-  {
-    id: '6',
-    title: 'Le Bar\'Bare',
-    category: 'UI/UX Design',
-    cover: './assets/projets/lebarbare/logo.webp',
-    images: [
-      './assets/projets/lebarbare/communication.webp',
-      './assets/projets/lebarbare/concept.webp',
-      './assets/projets/lebarbare/logo.webp',
-      './assets/projets/lebarbare/couleurs.webp',
-      './assets/projets/lebarbare/maquette.webp',
-      './assets/projets/lebarbare/Quête du jour.webp',
-      './assets/projets/lebarbare/Affiche.webp',
-    ],
-    role: 'UI/UX Designer',
-    tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
-    description: 'Il nous a été demandé de créer et de mettre en place une campagne de communication visuelle pour la création d\'un \'Bar à thème\'. Le thème du bar et la ville m\'ont été imposés : Bar médiéval à Anvers en Belgique.',
-    problem: '',
-    process: '',
-    color: '#8B5CF6'
-  },
-
-  {
-    id: '8',
+    {
+    id: '1',
     title: 'PokeDuel',
     category: 'UI/UX Design',
     cover: './assets/projets/pokeduel/mockup.png',
@@ -140,7 +27,23 @@ export const projects: Project[] = [
   },
 
   {
-    id: '10',
+    id: '2',
+    title: 'vr',
+    category: 'Developpement Web & 3D',
+    cover: './assets/projets/vr/vr.webp',
+    images: [
+      './assets/projets/vr/vr.webp',
+    ],
+    role: '',
+    tools: ['HTML', 'A-Frame', 'Poly.pizza', 'Sketchfab'],
+    description: 'Il nous a été demandé de concevoir une expérience de réalité virtuelle accessible via un navigateur web dans le style graphique d\'un artiste. Le projet visait à démontrer les possibilités offertes par la VR sur le web. Voici le lien de l\'expérience : "https://alexis-maugain.github.io/VR/"',
+    problem: '',
+    process: '',
+    color: '#d53d3dff'
+  },
+
+  {
+    id: '3',
     title: 'One page Olive Oil',
     category: 'UI/UX Design',
     cover: './assets/projets/olive-oil/mockup.webp',
@@ -157,23 +60,134 @@ export const projects: Project[] = [
     process: '',
     color: '#ff1fe5ff'
   },
+
+
   {
-    id: '11',
-    title: 'vr',
-    category: 'Developpement Web & 3D',
-    cover: './assets/projets/vr/vr.webp',
+    id: '4',
+    title: 'RocamaTour',
+    category: 'UX/UI Design',
+    cover: './assets/projets/rocamatour/cover.png',
     images: [
-      './assets/projets/vr/vr.webp',
+      './assets/projets/rocamatour/hero.png',
+      './assets/projets/rocamatour/post1.png',
+      './assets/projets/rocamatour/post2.png',
+      './assets/projets/rocamatour/motion_rocamatour.mp4',
+
     ],
     role: '',
-    tools: ['HTML', 'A-Frame', 'Poly.pizza', 'Sketchfab'],
-    description: 'Il nous a été demandé de concevoir une expérience de réalité virtuelle accessible via un navigateur web dans le style graphique d\'un artiste. Le projet visait à démontrer les possibilités offertes par la VR sur le web. Voici le lien de l\'expérience : "https://alexis-maugain.github.io/VR/"',
+    tools: ['Figma', 'After effects'],
+    description: 'Création d\'une expérience immersive pour le site web de RocamaTour, un concept évènement inventé par nous même qui propose un mélange entre tourisme et course à pied',
     problem: '',
     process: '',
-    color: '#d53d3dff'
+    color: 'rgb(2, 97, 57)'
+  },
+
+  {
+    id: '5',
+    title: 'Subway Surfer',
+    category: 'UX/UI design',
+    cover: './assets/projets/subway-surfer/cover.png',
+    images: [
+      './assets/projets/subway-surfer/accueil.webp',
+      './assets/projets/subway-surfer/logo.webp',
+      './assets/projets/subway-surfer/objets3D_1.webp',
+      './assets/projets/subway-surfer/objets3D_2.webp',
+      './assets/projets/subway-surfer/storyboard.webp',
+      './assets/projets/subway-surfer/skate-story.mp4',
+
+
+    ],
+    role: 'Motion Designer, Video Editor & Web Designer',
+    tools: ['After Effects', 'Premiere Pro','WordPress', 'Figma', 'Blender'],
+    description: 'Il nous a été demandé de créer, développer et promouvoir un site web e-commerce inspiré des plateformes comme Le Bon Coin, Vinted, … adapté à l\'univers d\'un jeu vidéo emblématique de votre choix (par exemple : Mario, Zelda, etc.).',
+    problem: '',
+    process: '',
+    color: '#F59E0B'
+  },
+
+  {
+    id: '6',
+    title: 'Livre de cuisine',
+    category: 'Print Design',
+    cover: './assets/projets/livre-recette/mockup.webp',
+    images: [
+      './assets/projets/livre-recette/couverture.webp',
+      './assets/projets/livre-recette/page-recette.webp',
+      './assets/projets/livre-recette/Sommaire.webp',
+    ],
+    role: 'Graphic Designer',
+    tools: ['Indesign'],
+    description: 'Création d\'un livre de recettes.',
+    problem: 'Besoin de créer un livre de cuisine attractif et structuré pour valoriser une collection de recettes. La mise en page devait être claire, esthétique et faciliter la lecture des étapes de préparation.',
+    process: 'Définition de la structure éditoriale et du concept graphique, création d\'une charte graphique cohérente sur InDesign, mise en page des recettes avec hiérarchie visuelle, sélection et intégration des visuels, optimisation pour l\'impression.',
+    color: '#9333EA'
+  },
+
+  {
+    id: '7',
+    title: 'Nuit du Code',
+    category: 'UX/UI Design',
+    cover: './assets/projets/nuitcode/nuitcode.webp',
+    images: [
+  
+      './assets/projets/nuitcode/gameplay.webp',
+      './assets/projets/nuitcode/hero.webp',
+      './assets/projets/nuitcode/intro.webp',
+      './assets/projets/nuitcode/touches.webp',
+      './assets/projets/nuitcode/trophées.webp',
+      './assets/projets/nuitcode/Affiche.webp',
+    ],
+    role: 'Product Designer',
+    tools: ['PSPlay.js', 'HTML', 'CSS', 'Tailwind', 'JAVASCRIPT', 'Figma'],
+    description: 'Un jeu 2D developper en javascrit avec P5Play.js qui sert à faire de la prévention contre la pullution digital.Dans Ce je on incarne Zippy une petite souris qui lutter contre malware et mail frauduleux',
+    problem: '',
+    process: '',
+    color: '#EC4899'
   },
   {
-    id: '12',
+    id: '8',
+    title: 'Danniel Wellington',
+    category: 'UI/UX Design',
+    cover: './assets/projets/danniel-wellington/Cover.png',
+    images: [
+      './assets/projets/danniel-wellington/pages.webp',
+      './assets/projets/danniel-wellington/montres.png',
+      './assets/projets/danniel-wellington/avis.png',
+      './assets/projets/danniel-wellington/footer.png',
+
+    ],
+    role: 'UI/UX Designer & Developer',
+    tools: ['Figma', 'WordPress'],
+    description: 'Il nous a été demandé par binômes de concevoir et de développer des parcours utilisateurs au sein d\'un système d\'information, en combinant le développement web, le design d\'expérience et la gestion de projet. Nous devions créer un site WordPress de type "click & collect" pour une enseigne choisie en gardant la même charte graphique.',
+    problem: '',
+    process: '',
+    color: '#06B6D4'
+  },
+  {
+    id: '9',
+    title: 'Le Bar\'Bare',
+    category: 'UI/UX Design',
+    cover: './assets/projets/lebarbare/logo.webp',
+    images: [
+      './assets/projets/lebarbare/communication.webp',
+      './assets/projets/lebarbare/concept.webp',
+      './assets/projets/lebarbare/logo.webp',
+      './assets/projets/lebarbare/couleurs.webp',
+      './assets/projets/lebarbare/maquette.webp',
+      './assets/projets/lebarbare/Quête du jour.webp',
+      './assets/projets/lebarbare/Affiche.webp',
+    ],
+    role: 'UI/UX Designer',
+    tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
+    description: 'Il nous a été demandé de créer et de mettre en place une campagne de communication visuelle pour la création d\'un \'Bar à thème\'. Le thème du bar et la ville m\'ont été imposés : Bar médiéval à Anvers en Belgique.',
+    problem: '',
+    process: '',
+    color: '#8B5CF6'
+  },
+
+
+  {
+    id: '10',
     title: 'Digital Clean Up Day',
     category: 'UI/UX Design',
     cover: './assets/projets/digital-cleanup/cover.png',
@@ -193,7 +207,26 @@ export const projects: Project[] = [
   },
 
     {
-    id: '13',
+    id: '11', 
+    title: 'Fief des Vins',
+    category: 'UI/UX Design',
+    cover: './assets/projets/fiefdesvins/cover.webp',
+    images: [
+      './assets/projets/fiefdesvins/fiefdesvins.webp',
+      './assets/projets/fiefdesvins/hero.webp',
+      './assets/projets/fiefdesvins/contact.webp',
+      './assets/projets/fiefdesvins/livraison-entreprise.webp',
+    ],
+    role: 'Lead UX/UI Designer',
+    tools: ['Figma', 'WordPress'],
+    description: 'Refaire son site web en intégrant une partie retreinte pour les professionnels, pour qu\'ils puissent passer commande pour leurs évènements',
+    problem: 'Le site web existant ne répondait plus aux besoins du client, notamment l\'absence d\'un espace professionnel dédié permettant aux restaurateurs et organisateurs d\'événements de passer commande facilement. L\'interface n\'était pas optimisée pour le responsive design et l\'expérience utilisateur était peu intuitive.',
+    process: 'Analyse des besoins du client chez Phénix Studio, conception des maquettes UI sur Figma en respectant l\'identité visuelle de la cave, développement d\'un espace client professionnel sécurisé, intégration sur WordPress avec attention portée au responsive design et à l\'accessibilité, tests utilisateurs et ajustements.',
+    color: '#1DB954'
+  },
+
+  {
+    id: '12',
     title: 'Vidéo Carrefour Club',
     category: 'Motion Design',
     cover: './assets/projets/carrefour-club/cover.png',
@@ -208,6 +241,26 @@ export const projects: Project[] = [
     problem: '',
     process: '',
     color: '#3aa217ff'
+  },
+
+  {
+    id: '13',
+    title: 'Refonte site Sauce Martin',
+    category: 'UI/UX Design',
+    cover: './assets/projets/sauce-martin/cover.png',
+    images: [
+      './assets/projets/sauce-martin/audit.png',
+      './assets/projets/sauce-martin/catalogue.png',
+      './assets/projets/sauce-martin/pimentomètre.png',
+      './assets/projets/sauce-martin/prototypes.png',
+
+    ],
+    role: 'Projet perso',
+    tools: ['Figma'],
+    description: 'Refonte du site web de la marque Sauce Martin',
+    problem: '',
+    process: 'Audit du site existant, identification des points d\'amélioration, création de maquettes UI sur Figma en respectant l\'identité visuelle de la marque, développement du site web avec une attention particulière portée au responsive design et à l\'expérience utilisateur, tests et ajustements.',
+    color: 'rgb(2, 97, 57)'
   },
 
   {
@@ -230,31 +283,10 @@ export const projects: Project[] = [
 
   {
     id: '15',
-    title: 'Refonte site Sauce Martin',
-    category: 'UI/UX Design',
-    cover: './assets/projets/sauce-martin/cover.png',
-    images: [
-      './assets/projets/sauce-martin/audit.png',
-      './assets/projets/sauce-martin/catalogue.png',
-      './assets/projets/sauce-martin/pimentomètre.png',
-      './assets/projets/sauce-martin/prototypes.png',
-
-    ],
-    role: '',
-    tools: ['Figma'],
-    description: 'Refonte du site web de la marque Sauce Martin',
-    problem: '',
-    process: 'Audit du site existant, identification des points d\'amélioration, création de maquettes UI sur Figma en respectant l\'identité visuelle de la marque, développement du site web avec une attention particulière portée au responsive design et à l\'expérience utilisateur, tests et ajustements.',
-    color: 'rgb(2, 97, 57)'
-  },
-
-  {
-    id: '16',
     title: 'Unis Vers Tchouk',
     category: 'UI/UX Design',
     cover: './assets/projets/unis-vers-tchouk/cover.png',
     images: [
-      './assets/projets/unis-vers-tchouk/wireframe.png',
       './assets/projets/unis-vers-tchouk/hero.png',
       './assets/projets/unis-vers-tchouk/newsletter.png',
       './assets/projets/unis-vers-tchouk/footer.png',
@@ -270,25 +302,7 @@ export const projects: Project[] = [
     color: 'rgb(2, 97, 57)'
   },
 
-  {
-    id: '17',
-    title: 'RocamaTour',
-    category: 'UX/UI Design',
-    cover: './assets/projets/rocamatour/cover.png',
-    images: [
-      './assets/projets/rocamatour/hero.png',
-      './assets/projets/rocamatour/post1.png',
-      './assets/projets/rocamatour/post2.png',
-      './assets/projets/rocamatour/motion_rocamatour.mp4',
 
-    ],
-    role: '',
-    tools: ['Figma', 'After effects'],
-    description: 'Création d\'une expérience immersive pour le site web de RocamaTour, un concept évènement inventé par nous même qui propose un mélange entre tourisme et course à pied',
-    problem: '',
-    process: '',
-    color: 'rgb(2, 97, 57)'
-  }
 ];
 
 export const playlists: Playlist[] = [
@@ -296,24 +310,24 @@ export const playlists: Playlist[] = [
     id: 'top-france',
     name: 'Top France',
     icon: 'trophy',
-    projects: ['1', '3', '4', '6']
+    projects: ['11', '13', '14', '4']
   },
   {
     id: 'ui-ux',
     name: 'UX/UI Design',
     icon: 'palette',
-    projects: ['1', '3', '5', '6', '8', '10', '12', '15', '16', '17']
+    projects: ['1','5', '3', '4', '7', '8', '10', '11', '13', '15']
   },
   {
     id: 'dev',
     name: 'Dev',
     icon: 'code',
-    projects: ['1', '2', '3', '4', '5', '11']
+    projects: ['2', '5', '7', '8', '11', '14', '15']
   },
   {
     id: 'motion',
     name: 'Motion & 3D',
     icon: 'film',
-    projects: ['3', '11', '12', '13', '17']
+    projects: ['4', '5', '6', '10', '12', '14']
   }
 ];

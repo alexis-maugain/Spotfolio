@@ -128,12 +128,12 @@ export default function App() {
   const uiuxProjects = useMemo(() => projects.filter(p => p.category.includes('UI/UX')).slice(0, 6), []);
   
   const playlistsData = useMemo(() => [
-    { id: 'all', title: 'Tous les singles', gradient: '#EC4899, #8B5CF6', cover: projects[4]?.cover },
-    { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[5]?.cover },
-    { id: 'top-france', title: 'Top France', gradient: '#1DB954, #1ed760', cover: projects[0]?.cover },
-    { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[1]?.cover },
-    { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[2]?.cover },
-    { id: 'motion', title: 'Motion & 3D', gradient: '#F59E0B, #EF4444', cover: projects[3]?.cover },
+    { id: 'all', title: 'Tous les singles', gradient: '#EC4899, #8B5CF6', cover: projects[1]?.cover },
+    { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[4]?.cover },
+    { id: 'top-france', title: 'Top France', gradient: '#1DB954, #1ed760', cover: projects[11]?.cover },
+    { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[13]?.cover },
+    { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[7]?.cover },
+    { id: 'motion', title: 'Motion & 3D', gradient: '#F59E0B, #EF4444', cover: projects[5]?.cover },
   ], []);
   
   const categories = useMemo(() => [
