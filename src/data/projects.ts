@@ -41,13 +41,14 @@ export const projects: Project[] = [
     id: '3',
     title: 'Produire du contenu multimédia',
     category: 'Motion Design',
-    cover: './assets/projets/subway-surfer/cover.webp',
+    cover: './assets/projets/subway-surfer/cover.png',
     images: [
       './assets/projets/subway-surfer/accueil.webp',
       './assets/projets/subway-surfer/logo.webp',
       './assets/projets/subway-surfer/objets3D_1.webp',
       './assets/projets/subway-surfer/objets3D_2.webp',
       './assets/projets/subway-surfer/storyboard.webp',
+      './assets/projets/subway-surfer/skate-story.mp4',
 
 
     ],
@@ -152,24 +153,7 @@ export const projects: Project[] = [
     process: '',
     color: '#059669'
   },
-  {
-    id: '9',
-    title: 'Identité Visuelle Startup',
-    category: 'UI/UX Design',
-    cover: './assets/projets/glow-pong/cover.webp',
-    images: [
-      './assets/projets/glow-pong/accueil.webp',
-      './assets/projets/glow-pong/Concept.webp',
-      './assets/projets/glow-pong/Contact.webp',
-      './assets/projets/glow-pong/wireframe.webp',
-    ],
-    role: 'UI/UX Designer',
-    tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
-    description: 'Création d\'une identité visuelle complète pour une startup innovante. Le projet englobait la conception du logo, le choix de la typographie, la définition de la palette de couleurs et la création d\'un guide de style. J\'ai également développé des supports de communication print et digital.',
-    problem: '',
-    process: '',
-    color: '#fceb2aff'
-  },
+
   {
     id: '10',
     title: 'One page Olive Oil',
@@ -207,9 +191,9 @@ export const projects: Project[] = [
     id: '12',
     title: 'Créer pour une campagne de communication visuelle',
     category: 'UI/UX Design',
-    cover: './assets/projets/digital-cleanup/cover.webp',
+    cover: './assets/projets/digital-cleanup/cover.png',
     images: [
-      './assets/projets/digital-cleanup/cover.webp',
+      './assets/projets/digital-cleanup/hero.webp',
       './assets/projets/digital-cleanup/Newsletter.webp',
       './assets/projets/digital-cleanup/wireframe.webp',
       './assets/projets/digital-cleanup/Footer.webp',
@@ -257,6 +241,68 @@ export const projects: Project[] = [
     problem: '',
     process: '',
     color: 'rgb(2, 97, 57)'
+  },
+
+  {
+    id: '15',
+    title: 'Refonte site Sauce Martin',
+    category: 'UI/UX Design',
+    cover: './assets/projets/sauce-martin/hero.png',
+    images: [
+      './assets/projets/sauce-martin/audit.png',
+      './assets/projets/sauce-martin/catalogue.png',
+      './assets/projets/sauce-martin/pimentomètre.png',
+      './assets/projets/sauce-martin/prototypes.png',
+
+    ],
+    role: '',
+    tools: ['Figma'],
+    description: 'Refonte du site web de la marque Sauce Martin',
+    problem: '',
+    process: 'Audit du site existant, identification des points d\'amélioration, création de maquettes UI sur Figma en respectant l\'identité visuelle de la marque, développement du site web avec une attention particulière portée au responsive design et à l\'expérience utilisateur, tests et ajustements.',
+    color: 'rgb(2, 97, 57)'
+  },
+
+  {
+    id: '16',
+    title: 'Unis Vers Tchouk',
+    category: 'UI/UX Design',
+    cover: './assets/projets/unis-vers-tchouk/cover.png',
+    images: [
+      './assets/projets/unis-vers-tchouk/wireframe.png',
+      './assets/projets/unis-vers-tchouk/hero.png',
+      './assets/projets/unis-vers-tchouk/newsletter.png',
+      './assets/projets/unis-vers-tchouk/footer.png',
+      './assets/projets/unis-vers-tchouk/prototype.png',
+      './assets/projets/unis-vers-tchouk/posts.png',
+
+    ],
+    role: '',
+    tools: ['Figma', 'WordPress'],
+    description: 'Audit et refonte du site web de l\'association Unis Vers Tchouk, qui promeut le tchoukball, un sport collectif dynamique. Le projet a consisté à analyser le site existant, identifier les points d\'amélioration en termes d\'ergonomie et de design, puis à créer une nouvelle interface utilisateur plus moderne et intuitive sur Figma. La refonte a également inclus le développement du site web avec une attention particulière portée au responsive design pour garantir une expérience optimale sur tous les appareils.',
+    problem: '',
+    process: '',
+    color: 'rgb(2, 97, 57)'
+  },
+
+  {
+    id: '17',
+    title: 'RocamaTour',
+    category: 'VR/3D',
+    cover: './assets/projets/rocamatour/cover.png',
+    images: [
+      './assets/projets/rocamatour/hero.png',
+      './assets/projets/rocamatour/post1.png',
+      './assets/projets/rocamatour/post2.png',
+      './assets/projets/rocamatour/motion_rocamatour.mp4',
+
+    ],
+    role: '',
+    tools: ['Figma', 'After effects'],
+    description: 'Création d\'une expérience immersive pour le site web de RocamaTour, un concept évènement inventé par nous même qui propose un mélange entre tourisme et course à pied',
+    problem: '',
+    process: '',
+    color: 'rgb(2, 97, 57)'
   }
 ];
 
@@ -271,7 +317,7 @@ export const playlists: Playlist[] = [
     id: 'ui-ux',
     name: 'UX/UI Design',
     icon: 'palette',
-    projects: ['1', '3', '5', '6','7', '8', '9', '10', '12']
+    projects: ['1', '3', '5', '6','7', '8', '10', '12', '15', '16', '17']
   },
   {
     id: 'web',
@@ -283,6 +329,6 @@ export const playlists: Playlist[] = [
     id: 'motion',
     name: 'Motion & 3D',
     icon: 'film',
-    projects: ['3', '11', '12', '13']
+    projects: ['3', '11', '12', '13', '17']
   }
 ];
