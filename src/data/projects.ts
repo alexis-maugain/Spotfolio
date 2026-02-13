@@ -81,7 +81,7 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    title: 'Créer un site WordPress de type \'click & collect\'',
+    title: 'Site WordPress de type \'click & collect\'',
     category: 'UI/UX Design',
     cover: './assets/projets/danniel-wellington/Cover.webp',
     images: [
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     id: '8',
     title: 'Concept d\'application mobile',
     category: 'UI/UX Design',
-    cover: './assets/projets/pokeduel/mockup.webp',
+    cover: './assets/projets/pokeduel/mockup.png',
     images: [
       './assets/projets/pokeduel/accueil.webp',
       './assets/projets/pokeduel/Boutique.webp',
@@ -172,7 +172,7 @@ export const projects: Project[] = [
   },
   {
     id: '10',
-    title: 'One page pour marque d\'huile d\'olive premium',
+    title: 'One page Olive Oil',
     category: 'UI/UX Design',
     cover: './assets/projets/olive-oil/mockup.webp',
     images: [
@@ -198,7 +198,7 @@ export const projects: Project[] = [
     ],
     role: '',
     tools: ['HTML', 'A-Frame', 'Poly.pizza', 'Sketchfab'],
-    description: 'Il nous a été demandé de concevoir une expérience de réalité virtuelle accessible via un navigateur web dans le style graphique d\'un artiste. Le projet visait à démontrer les possibilités offertes par la VR sur le web.',
+    description: 'Il nous a été demandé de concevoir une expérience de réalité virtuelle accessible via un navigateur web dans le style graphique d\'un artiste. Le projet visait à démontrer les possibilités offertes par la VR sur le web. Voici le lien de l\'expérience : "https://alexis-maugain.github.io/VR/"',
     problem: '',
     process: '',
     color: '#d53d3dff'
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     category: 'UI/UX Design',
     cover: './assets/projets/digital-cleanup/cover.webp',
     images: [
-      './assets/projets/digital-cleanup/hero.webp',
+      './assets/projets/digital-cleanup/cover.webp',
       './assets/projets/digital-cleanup/Newsletter.webp',
       './assets/projets/digital-cleanup/wireframe.webp',
       './assets/projets/digital-cleanup/Footer.webp',
@@ -225,20 +225,38 @@ export const projects: Project[] = [
 
     {
     id: '13',
-    title: 'Faire une vidéo promotionnelle',
+    title: 'Vidéo Carrefour Club',
     category: 'Motion Design',
     cover: './assets/projets/carrefour-club/cover.webp',
     images: [
       './assets/projets/carrefour-club/storyboard_versions.webp',
       './assets/projets/carrefour-club/storyboard_final.webp',
-      './assets/projets/carrefour-club/motion_format-desktop.mp4',
+      './assets/projets/carrefour-club/vidéo.mp4',
     ],
     role: 'Motion Designer',
-    tools: ['Adobe Illustrator', 'After Effects', 'Premiere Pro'],
+    tools: ['Adobe Illustrator', 'After Effects'],
     description: 'Création d\'une vidéo promotionnelle pour le programme de fidélité "Carrefour Club". La vidéo vise à informer les clients des avantages exclusifs offerts par le programme et à encourager l\'inscription.',
     problem: '',
     process: '',
     color: '#3aa217ff'
+  },
+
+  {
+    id: '14',
+    title: 'Le cube',
+    category: 'VR/3D',
+    cover: './assets/projets/lecube/cover.png',
+    images: [
+      './assets/projets/lecube/hotel.png',
+      './assets/projets/lecube/avion.png',
+      './assets/projets/lecube/storyboard.png',
+    ],
+    role: '',
+    tools: ['HTML', 'Figma'],
+    description: 'Expérience de réalité virtuelle dans le cadre d’un partenariat entre la marque Rolex et le film Inception',
+    problem: '',
+    process: '',
+    color: 'rgb(2, 97, 57)'
   }
 ];
 
