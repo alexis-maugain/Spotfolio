@@ -4,7 +4,7 @@ import { Project, Playlist } from '../types';
 export const projects: Project[] = [
   {
     id: '1', 
-    title: 'Refonte du site web d\'une cave à vin',
+    title: 'Fief des Vins',
     category: 'UI/UX Design',
     cover: './assets/projets/fiefdesvins/cover.webp',
     images: [
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Produire du contenu multimédia',
+    title: 'Subway Surfer',
     category: 'Motion Design',
     cover: './assets/projets/subway-surfer/cover.png',
     images: [
@@ -82,9 +82,9 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    title: 'Site WordPress de type \'click & collect\'',
+    title: 'Danniel Wellington',
     category: 'UI/UX Design',
-    cover: './assets/projets/danniel-wellington/Cover.webp',
+    cover: './assets/projets/danniel-wellington/Cover.png',
     images: [
       './assets/projets/danniel-wellington/pages.webp',
     ],
@@ -97,7 +97,7 @@ export const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'Créer pour une campagne de communication visuelle',
+    title: 'Le Bar\'Bare',
     category: 'UI/UX Design',
     cover: './assets/projets/lebarbare/logo.webp',
     images: [
@@ -118,7 +118,7 @@ export const projects: Project[] = [
   },
   {
     id: '7',
-    title: 'Concevoir des visualisations de données pour le web',
+    title: 'OpenData University',
     category: 'UI/UX Design',
     cover: './assets/projets/data-visualisation/cover.webp',
     images: [
@@ -134,7 +134,7 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    title: 'Concept d\'application mobile',
+    title: 'PokeDuel',
     category: 'UI/UX Design',
     cover: './assets/projets/pokeduel/mockup.png',
     images: [
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     ],
     role: 'UI/UX Designer',
     tools: ['Figma'],
-    description: '',
+    description: 'Il nous a été demandé de concevoir un concept d\'application mobile dans l\'univers de notre choix. L\'application devait comporter au moins 5 écrans fonctionnels, incluant des éléments interactifs tels que des boutons, des formulaires et des animations. Le design devait être cohérent avec l\'univers choisi et offrir une expérience utilisateur fluide et intuitive.',
     problem: '',
     process: '',
     color: '#059669'
@@ -189,7 +189,7 @@ export const projects: Project[] = [
   },
   {
     id: '12',
-    title: 'Créer pour une campagne de communication visuelle',
+    title: 'Digital Clean Up Day',
     category: 'UI/UX Design',
     cover: './assets/projets/digital-cleanup/cover.png',
     images: [
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     id: '13',
     title: 'Vidéo Carrefour Club',
     category: 'Motion Design',
-    cover: './assets/projets/carrefour-club/cover.webp',
+    cover: './assets/projets/carrefour-club/cover.png',
     images: [
       './assets/projets/carrefour-club/storyboard_versions.webp',
       './assets/projets/carrefour-club/storyboard_final.webp',
@@ -227,7 +227,7 @@ export const projects: Project[] = [
 
   {
     id: '14',
-    title: 'Le cube',
+    title: 'Le cube expérience VR',
     category: 'VR/3D',
     cover: './assets/projets/lecube/cover.png',
     images: [
