@@ -1,6 +1,56 @@
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { X, Play, Pause, Heart, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Project } from '../types';
+
+function linkifyText(text: string): ReactNode[] {
+  const combinedRegex = /(\[[^\]]+\]\(https?:\/\/[^)]+\))|(https?:\/\/[^\s"]+)/g;
+  const result: ReactNode[] = [];
+  let lastIndex = 0;
+
+  text.replace(combinedRegex, (match, mdLink, plainUrl, offset) => {
+    if (offset > lastIndex) {
+      result.push(text.slice(lastIndex, offset));
+    }
+    if (mdLink) {
+      const labelMatch = mdLink.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/);
+      if (labelMatch) {
+        result.push(
+          <a
+            key={offset}
+            href={labelMatch[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-300 transition-colors"
+            style={{ textDecoration: 'underline' }}
+          >
+            {labelMatch[1]}
+          </a>
+        );
+      }
+    } else if (plainUrl) {
+      result.push(
+        <a
+          key={offset}
+          href={plainUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-400 hover:text-green-300 transition-colors"
+          style={{ textDecoration: 'underline' }}
+        >
+          {plainUrl}
+        </a>
+      );
+    }
+    lastIndex = offset + match.length;
+    return match;
+  });
+
+  if (lastIndex < text.length) {
+    result.push(text.slice(lastIndex));
+  }
+
+  return result;
+}
 
 interface ProjectViewProps {
   project: Project | null;
@@ -87,7 +137,7 @@ export function ProjectView({
                   className="flex items-center gap-2 md:gap-4 text-xs md:text-sm text-white/80 animate-fade-in"
                   style={{ animationDelay: '0.1s' }}
                 >
-                  <span>{project.role}</span>
+                  <span>{linkifyText(project.role)}</span>
                   <span>•</span>
                   <span>{project.category}</span>
                 </div>
@@ -120,6 +170,17 @@ export function ProjectView({
             >
               <Heart size={24} fill={isFavorite ? 'currentColor' : 'none'} />
             </button>
+
+            {project.protoLink && (
+              <a
+                href={project.protoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full border border-neutral-600 text-neutral-400 hover:border-white hover:text-white flex items-center justify-center transition-all cursor-pointer hover:scale-110 active:scale-95"
+              >
+                <ExternalLink size={22} />
+              </a>
+            )}
           </div>
         </div>
 
@@ -130,7 +191,7 @@ export function ProjectView({
             {/* Description */}
             <section className="animate-fade-in" style={{ animationDelay: '0.15s' }}>
               <h2 className="text-white mb-4">Présentation</h2>
-              <p className="text-neutral-300 leading-relaxed">{project.description}</p>
+              <p className="text-neutral-300 leading-relaxed">{linkifyText(project.description)}</p>
             </section>
 
             {/* Tools */}

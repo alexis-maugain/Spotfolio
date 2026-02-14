@@ -10,6 +10,7 @@ export interface Project {
   problem: string;
   process: string;
   color: string;
+  protoLink?: string;
 }
 
 export interface Playlist {

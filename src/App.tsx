@@ -260,7 +260,7 @@ export default function App() {
                 <img src="./assets/moi.webp" alt="Alexis MAUGAIN" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover" loading="lazy" />
               </div>
               <div className="md:flex-1">
-                <h1 className="text-white mb-0 md:mb-4 text-[32px] md:text-[40px]">Alexis MAUGAIN</h1>
+                <h1 className="text-white mb-0 md:mb-4 text-[32px] md:text-[40px]" style={{ fontWeight: 700, lineHeight: 1.2 }}>Alexis MAUGAIN</h1>
                 <p className="hidden md:block text-lg md:text-xl text-neutral-300">
                   Je compose des expériences numériques comme des morceaux bien produits.
                 </p>
@@ -314,7 +314,7 @@ export default function App() {
         <div
           className="max-w-2xl animate-fade-in"
         >
-          <h1 className="text-white mb-6 text-6xl">Contact</h1>
+          <h1 className="text-white mb-6 text-6xl" style={{ fontWeight: 400, lineHeight: 1.2 }}>Contact</h1>
           <p className="text-xl text-neutral-300 mb-12">
             Une envie de featuring ? On appuie sur play et on en parle.
           </p>
