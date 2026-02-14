@@ -7,11 +7,13 @@ export function WelcomeBanner() {
       style={{ marginBottom: '2rem' }}
     >
       {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-green-500/20 to-green-700/40" />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-green-500/20 to-green-700/40 rounded-2xl" />
       
-      {/* Decorative circles */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
+      {/* Decorative circles - contained to prevent horizontal overflow */}
+      <div className="absolute inset-0 overflow-hidden rounded-2xl">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 flex items-start gap-4">

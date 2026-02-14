@@ -20,8 +20,8 @@ export function Sidebar({ activeView, onNavigate, favoriteProjects }: SidebarPro
   ];
 
   const footerLinks = [
-    { id: 'about', label: 'À propos', icon: User },
-    { id: 'contact', label: 'Contact', icon: Mail }
+    { id: 'contact', label: 'Contact', icon: Mail },
+    { id: 'about', label: 'Profil', icon: User }
   ];
 
   return (
