@@ -312,8 +312,16 @@ export default function App() {
     if (activeView === 'contact') {
       return (
         <div
-          className="max-w-2xl animate-fade-in"
+          className="relative max-w-2xl animate-fade-in"
         >
+          {/* Avatar contact */}
+          <img
+            src="./assets/avatar-contact.png"
+            alt="Avatar contact"
+            className="hidden md:block absolute right-0 top-0 w-48 h-auto"
+            style={{ transform: 'translateX(110%)' }}
+          />
+
           <h1 className="text-white mb-6 text-6xl" style={{ fontWeight: 400, lineHeight: 1.2 }}>Contact</h1>
           <p className="text-xl text-neutral-300 mb-12">
             Une envie de featuring ? On appuie sur play et on en parle.
