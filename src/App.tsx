@@ -456,7 +456,7 @@ export default function App() {
       
       <Sidebar
         activeView={activeView}
-        onNavigate={setActiveView}
+        onNavigate={(view) => { setActiveView(view); setIsProjectViewOpen(false); }}
         favoriteProjects={favoriteProjects}
       />
 
@@ -477,7 +477,7 @@ export default function App() {
 
       <MobileNav
         activeView={activeView}
-        onNavigate={setActiveView}
+        onNavigate={(view) => { setActiveView(view); setIsProjectViewOpen(false); }}
         favoriteProjects={favoriteProjects}
       />
 
