@@ -91,7 +91,7 @@ export default function App() {
 
   const getViewDescription = (): string => {
     if (activeView === 'top-france') {
-      return 'Mes meilleurs projets, classés par pertinence et impact. Une sélection de réalisations qui ont marqué ma carrière créative.';
+      return 'Mes meilleurs projets, les plus marquants et pertinents. Une sélection de réalisations qui ont marqué ma carrière créative.';
     }
     if (activeView === 'ui-ux') {
       return 'Une collection de projets centrés sur l\'expérience utilisateur et le design d\'interface.';
