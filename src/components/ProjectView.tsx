@@ -1,4 +1,4 @@
-import { useState, ReactNode } from 'react';
+import { useState, useEffect, useRef, ReactNode } from 'react';
 import { X, Play, Pause, Heart, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Project } from '../types';
 
@@ -72,6 +72,14 @@ export function ProjectView({
   isFavorite 
 }: ProjectViewProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to top when the project changes
+  useEffect(() => {
+    if (project && scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo(0, 0);
+    }
+  }, [project]);
 
   // Filter only images (not videos) for the lightbox
   const imageOnly = project?.images.filter(
@@ -99,6 +107,7 @@ export function ProjectView({
 
   return (
     <div
+      ref={scrollContainerRef}
       className="fixed inset-0 bg-black/95 z-40 overflow-y-auto animate-fade-in"
     >
       <div className="min-h-screen pb-32">
