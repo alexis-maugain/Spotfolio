@@ -100,7 +100,7 @@ export default function App() {
       return 'Développements web, applications et expériences digitales interactives.';
     }
     if (activeView === 'motion') {
-      return 'Motion design, animations 3D et expériences visuelles immersives.';
+      return 'Motion design, animations 3D et autres projets.';
     }
     if (activeView === 'all') {
       return 'L\'intégralité de mes projets créatifs dans tous les domaines.';
@@ -273,13 +273,13 @@ export default function App() {
 
           <div className="space-y-6 text-neutral-300 pb-12 md:pb-16">
             <p>
-              Chaque projet est une playlist immersive où création, interaction et technologie s'accordent pour offrir une expérience fluide et mémorable.
+              Pour moi, chaque projet est un mix entre créativité et logique. J’aime quand le design est beau, mais surtout quand il fonctionne vraiment. Quand tout est fluide. Quand l’utilisateur n’a même pas besoin de réfléchir pour comprendre où cliquer.
             </p>
             <p>
-              Étudiant en BUT MMI, spécialisé en création numérique, je façonne des interfaces claires, esthétiques et pensées pour l'utilisateur. De l'idée à la réalisation, chaque élément est travaillé comme une note juste : à sa place, utile et cohérente dans l'ensemble.
+              Étudiant, spécialisé en création numérique, je façonne des interfaces claires, esthétiques et pensées pour l'utilisateur. De l'idée à la réalisation, chaque élément est travaillé comme une note juste : à sa place, utile et cohérente dans l'ensemble.
             </p>
             <p>
-              J'aime transformer des concepts en expériences digitales engageantes, capables de capter l'attention et de guider naturellement l'utilisateur, comme un morceau qu'on relance encore et encore.
+              Mon objectif ? Créer des expériences digitales qui donnent envie de rester, d’explorer… et de revenir. Un peu comme ce morceau que tu mets en boucle sans t’en rendre compte.
             </p>
 
             <div className="mt-12 pt-8 border-t border-neutral-800">
