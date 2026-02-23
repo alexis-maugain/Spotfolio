@@ -460,7 +460,9 @@ export default function App() {
         favoriteProjects={favoriteProjects}
       />
 
-      <main className={`ml-0 md:ml-64 p-4 md:p-8 overflow-x-hidden ${currentProject ? 'pb-52' : 'pb-32'} md:pb-32`}>
+      <main
+        className={`ml-0 md:ml-64 p-4 md:p-8 overflow-x-hidden md:pb-32 ${currentProject ? 'pb-player-open' : 'pb-24'}`}
+      >
         {renderContent()}
       </main>
 

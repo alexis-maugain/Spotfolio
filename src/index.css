@@ -2264,3 +2264,10 @@ html {
     opacity: .5;
   }
 }
+
+/* Extra bottom padding on mobile when player is open */
+@media (max-width: 767px) {
+  .pb-player-open {
+    padding-bottom: 200px !important;
+  }
+}
