@@ -33,7 +33,7 @@ export function Sidebar({ activeView, onNavigate, favoriteProjects }: SidebarPro
           className="flex items-center gap-2 cursor-pointer"
         >
           <div className="w-8 h-8 flex items-center justify-center">
-            <img src="./assets/logospoti.svg" alt="Spotfolio Logo" className="w-8 h-8" />
+            <img src="./assets/logo-spotfolio.svg" alt="Spotfolio Logo" className="w-8 h-8" />
           </div>
           <span className="text-white tracking-tight">Spotfolio</span>
         </button>
