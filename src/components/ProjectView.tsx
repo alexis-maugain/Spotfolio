@@ -81,6 +81,18 @@ export function ProjectView({
     }
   }, [project]);
 
+  // Hide background page scrollbar when project view is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   // Filter only images (not videos) for the lightbox
   const imageOnly = project?.images.filter(
     (img) => !img.endsWith('.mp4') && !img.endsWith('.webm') && !img.endsWith('.mov')
