@@ -340,6 +340,22 @@ export default function App() {
                 <p className="text-neutral-400">alexis.maugain@gmail.com</p>
               </div>
             </a>
+
+
+            <a
+              href="https://www.linkedin.com/in/alexis-maugain"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-6 bg-neutral-900 hover:bg-neutral-800 rounded-lg transition-colors group"
+            >
+              <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center group-hover:bg-green-500/30 transition-colors">
+                <Linkedin className="text-green-500" size={24} />
+              </div>
+              <div>
+                <p className="text-white">LinkedIn</p>
+                <p className="text-neutral-400">@alexis-maugain</p>
+              </div>
+            </a>
             
 
             <a
@@ -357,20 +373,6 @@ export default function App() {
               </div>
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/alexis-maugain"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 p-6 bg-neutral-900 hover:bg-neutral-800 rounded-lg transition-colors group"
-            >
-              <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center group-hover:bg-green-500/30 transition-colors">
-                <Linkedin className="text-green-500" size={24} />
-              </div>
-              <div>
-                <p className="text-white">LinkedIn</p>
-                <p className="text-neutral-400">@alexis-maugain</p>
-              </div>
-            </a>
 
             <div className="flex items-center gap-4 p-6 bg-neutral-900 rounded-lg">
               <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
