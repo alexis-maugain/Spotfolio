@@ -324,7 +324,7 @@ export default function App() {
 
           <h1 className="text-white mb-6 text-6xl" style={{ fontWeight: 400, lineHeight: 1.2 }}>Contact</h1>
           <p className="text-xl text-neutral-300 mb-12">
-            Une envie de featuring ? On appuie sur play et on en parle.
+            Une envie de featuring ? On appuie sur play et on en parle !
           </p>
 
           <div className="space-y-6">
