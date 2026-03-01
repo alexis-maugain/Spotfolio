@@ -1,4 +1,4 @@
-import { Play, Pause, SkipBack, SkipForward, Heart, Maximize2 } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Heart, Maximize2, Minimize2 } from 'lucide-react';
 import { Project } from '../types';
 import { useState, useEffect, memo } from 'react';
 
@@ -11,6 +11,7 @@ interface PlayerProps {
   onToggleFavorite: (projectId: string) => void;
   isFavorite: boolean;
   onExpand: () => void;
+  isProjectViewOpen: boolean;
 }
 
 export const Player = memo(function Player({ 
@@ -21,7 +22,8 @@ export const Player = memo(function Player({
   onNext,
   onToggleFavorite,
   isFavorite,
-  onExpand
+  onExpand,
+  isProjectViewOpen
 }: PlayerProps) {
   const [progress, setProgress] = useState(0);
 
@@ -43,7 +45,8 @@ export const Player = memo(function Player({
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 bg-neutral-950 border-t border-neutral-800 z-[60] md:bottom-0 bottom-16 animate-slide-up"
+      className="fixed bottom-0 left-0 bg-neutral-950 border-t border-neutral-800 z-[60] md:bottom-0 bottom-16 animate-slide-up"
+      style={{ right: 'var(--scrollbar-width, 0px)' }}
     >
       {/* Progress Bar */}
       <div className="relative h-1 bg-neutral-800 group cursor-pointer">
@@ -127,7 +130,7 @@ export const Player = memo(function Player({
             onClick={onExpand}
             className="bg-green-500 hover:bg-green-400 hover:scale-120 active:scale-95 rounded-full p-2 transition-all shadow-lg shadow-green-500/50 cursor-pointer"
           >
-            <Maximize2 size={20} className="text-black" />
+            {isProjectViewOpen ? <Minimize2 size={20} className="text-black" /> : <Maximize2 size={20} className="text-black" />}
           </button>
         </div>
       </div>

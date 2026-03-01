@@ -476,7 +476,8 @@ export default function App() {
         onNext={handleNext}
         onToggleFavorite={handleToggleFavorite}
         isFavorite={currentProject ? favoriteProjects.includes(currentProject.id) : false}
-        onExpand={() => setIsProjectViewOpen(true)}
+        onExpand={() => setIsProjectViewOpen(prev => !prev)}
+        isProjectViewOpen={isProjectViewOpen}
       />
 
       <MobileNav

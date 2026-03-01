@@ -16,7 +16,7 @@ export function MobileNav({ activeView, onNavigate, favoriteProjects }: MobileNa
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-neutral-950 border-t border-neutral-800 z-50 pb-safe">
+    <div className="md:hidden fixed bottom-0 left-0 bg-neutral-950 border-t border-neutral-800 z-50 pb-safe" style={{ right: 'var(--scrollbar-width, 0px)' }}>
       <div className="flex items-center justify-around px-2 py-3">
         {navItems.map((item) => {
           const Icon = item.icon;
