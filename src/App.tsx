@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { Download, Mail, Github, MapPin, Linkedin } from 'lucide-react';
+import { Download, Mail, Github, MapPin, Linkedin, BadgeCheck } from 'lucide-react';
 import { Sidebar } from './components/Sidebar';
 import { Player } from './components/Player';
 import { ProjectCard } from './components/ProjectCard';
@@ -260,14 +260,18 @@ export default function App() {
                 <img src="./assets/moi.webp" alt="Alexis MAUGAIN" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover" loading="lazy" />
               </div>
               <div className="md:flex-1">
-                <h1 className="text-white mb-0 md:mb-4 text-[32px] md:text-[40px]" style={{ fontWeight: 700, lineHeight: 1.2 }}>Alexis MAUGAIN</h1>
-                <p className="hidden md:block text-lg md:text-xl text-neutral-300">
-                  Je compose des expériences numériques comme des morceaux bien produits.
+                <div className="flex items-center gap-2 mb-1">
+                  <BadgeCheck size={20} className="text-blue-500" fill="#3b82f6" stroke="white" />
+                  <span className="text-xs md:text-sm text-white/80">Profil vérifié</span>
+                </div>
+                <h1 className="text-white mb-1 md:mb-2 text-[32px] md:text-[40px]" style={{ fontWeight: 700, lineHeight: 1.2 }}>Alexis MAUGAIN</h1>
+                <p className="hidden md:block text-sm md:text-base text-neutral-400">
+                  UX/UI Designer · 237 795 auditeurs mentuels · {projects.length} projets 
                 </p>
               </div>
             </div>
-            <p className="text-lg text-neutral-300 md:hidden">
-              Je compose des expériences numériques comme des morceaux bien produits.
+            <p className="text-sm text-neutral-400 md:hidden mt-2">
+              Designer &amp; Développeur · 15.2K vues · {projects.length} projets réalisés
             </p>
           </div>
 
