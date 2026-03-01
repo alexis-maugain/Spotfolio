@@ -1,5 +1,3 @@
-import { Play } from 'lucide-react';
-
 interface PlaylistCardProps {
   title: string;
   cover: string;
@@ -30,7 +28,7 @@ export function PlaylistCard({ title, cover, gradient, onClick }: PlaylistCardPr
       </div>
       
       <div className="flex-1 px-4 text-left">
-        <h3 className="text-white truncate">{title}</h3>
+        <p className="text-white truncate font-semibold">{title}</p>
       </div>
     </button>
   );

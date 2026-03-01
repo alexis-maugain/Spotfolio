@@ -64,9 +64,9 @@ export function Sidebar({ activeView, onNavigate, favoriteProjects }: SidebarPro
 
         {/* Playlists */}
         <div className="mb-6">
-          <h3 className="px-3 mb-2 text-xs uppercase tracking-wider text-neutral-500">
+          <p className="px-3 mb-2 text-xs uppercase tracking-wider text-neutral-500">
             Playlists
-          </h3>
+          </p>
           <div className="space-y-1">
             {playlists.map((playlist) => {
               const Icon = playlist.icon;
@@ -91,9 +91,9 @@ export function Sidebar({ activeView, onNavigate, favoriteProjects }: SidebarPro
 
         {/* Library */}
         <div>
-          <h3 className="px-3 mb-2 text-xs uppercase tracking-wider text-neutral-500">
+          <p className="px-3 mb-2 text-xs uppercase tracking-wider text-neutral-500">
             Bibliothèque
-          </h3>
+          </p>
           <div className="space-y-1">
             <button
               onClick={() => onNavigate('favorites')}

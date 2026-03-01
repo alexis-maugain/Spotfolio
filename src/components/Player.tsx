@@ -76,9 +76,9 @@ export const Player = memo(function Player({
             loading="lazy"
           />
           <div className="min-w-0">
-            <h4 className="text-white truncate cursor-pointer hover:underline text-sm md:text-base" onClick={onExpand}>
+            <p className="text-white truncate cursor-pointer hover:underline text-sm md:text-base font-semibold" onClick={onExpand}>
               {currentProject.title}
-            </h4>
+            </p>
             <p className="text-xs md:text-sm text-neutral-400 truncate">{currentProject.category}</p>
           </div>
           <button

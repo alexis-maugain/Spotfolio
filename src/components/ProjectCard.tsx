@@ -60,7 +60,7 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
 
       {/* Project Info */}
       <div>
-        <h3 className="text-white mb-1 truncate text-sm md:text-base">{project.title}</h3>
+        <p className="text-white mb-1 truncate text-sm md:text-base font-semibold">{project.title}</p>
         <p className="text-xs md:text-sm text-neutral-400 truncate">{project.category}</p>
       </div>
 
