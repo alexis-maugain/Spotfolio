@@ -140,6 +140,7 @@ export function ProjectView({
           {/* Close Button */}
           <button
             onClick={onClose}
+            aria-label="Fermer le projet"
             className="fixed top-6 right-6 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-50 cursor-pointer transition-all"
           >
             <X size={24} />
@@ -179,6 +180,7 @@ export function ProjectView({
           <div className="flex items-center gap-4">
             <button
               onClick={onTogglePlay}
+              aria-label={isPlaying ? 'Pause' : 'Lecture'}
               className="w-14 h-14 bg-green-500 hover:bg-green-400 hover:scale-105 active:scale-95 rounded-full flex items-center justify-center transition-all cursor-pointer"
             >
               {isPlaying ? (
@@ -190,6 +192,7 @@ export function ProjectView({
 
             <button
               onClick={() => onToggleFavorite(project.id)}
+              aria-label={isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
               className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all cursor-pointer hover:scale-110 active:scale-95 ${
                 isFavorite
                   ? 'border-green-500 text-green-500'
@@ -204,6 +207,7 @@ export function ProjectView({
                 href={project.protoLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Voir le prototype"
                 className="w-12 h-12 rounded-full border border-neutral-600 text-neutral-400 hover:border-white hover:text-white flex items-center justify-center transition-all cursor-pointer hover:scale-110 active:scale-95"
               >
                 <ExternalLink size={22} />
@@ -297,6 +301,7 @@ export function ProjectView({
           {/* Close button */}
           <button
             onClick={closeLightbox}
+            aria-label="Fermer la visionneuse"
             className="absolute top-6 right-6 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
           >
             <X size={24} />
@@ -306,6 +311,7 @@ export function ProjectView({
           {imageOnly.length > 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); goToPrev(); }}
+              aria-label="Image précédente"
               className="absolute left-4 md:left-8 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
               style={{ top: '50%', transform: 'translateY(-50%) translateY(-1.5rem)' }}
             >
@@ -318,6 +324,7 @@ export function ProjectView({
           {imageOnly.length > 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); goToNext(); }}
+              aria-label="Image suivante"
               className="absolute right-4 md:right-8 w-10 h-10 bg-black/60 hover:bg-black hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white z-10 cursor-pointer transition-all"
               style={{ top: '50%', transform: 'translateY(-50%) translateY(-1.5rem)' }}
             >

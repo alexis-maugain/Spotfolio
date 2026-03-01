@@ -22,7 +22,7 @@ export function PlaylistCard({ title, cover, gradient, onClick }: PlaylistCardPr
         {cover && (
           <img 
             src={cover} 
-            alt={title}
+            alt=""
             className="w-full h-full object-cover"
             loading="lazy"
           />

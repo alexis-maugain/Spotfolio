@@ -16,6 +16,7 @@ export function WrappedModal({ isOpen, onClose }: WrappedModalProps) {
       {/* Close button */}
       <button
         onClick={onClose}
+        aria-label="Fermer"
         className="absolute top-6 right-6 w-10 h-10 bg-neutral-800 hover:bg-neutral-700 hover:scale-110 active:scale-95 rounded-full flex items-center justify-center text-white transition-all z-10 cursor-pointer"
       >
         <X size={24} />

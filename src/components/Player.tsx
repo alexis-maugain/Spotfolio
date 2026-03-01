@@ -70,7 +70,7 @@ export const Player = memo(function Player({
         <div className="flex items-center gap-4 flex-1 min-w-0">
           <img
             src={currentProject.cover}
-            alt={currentProject.title}
+            alt=""
             className="w-14 h-14 rounded-md object-cover cursor-pointer hidden md:block hover:scale-105 transition-transform"
             onClick={onExpand}
             loading="lazy"
@@ -83,6 +83,7 @@ export const Player = memo(function Player({
           </div>
           <button
             onClick={() => onToggleFavorite(currentProject.id)}
+            aria-label={isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
             className={`hidden md:block cursor-pointer hover:scale-110 active:scale-95 transition-transform ${
               isFavorite ? 'text-green-500' : 'text-neutral-400 hover:text-white'
             } transition-colors`}
@@ -96,6 +97,7 @@ export const Player = memo(function Player({
           <div className="flex items-center gap-4">
             <button
               onClick={onPrevious}
+              aria-label="Projet précédent"
               className="text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all cursor-pointer"
             >
               <SkipBack size={20} />
@@ -103,6 +105,7 @@ export const Player = memo(function Player({
             
             <button
               onClick={onTogglePlay}
+              aria-label={isPlaying ? 'Pause' : 'Lecture'}
               className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:scale-105 active:scale-95 transition-transform cursor-pointer"
             >
               {isPlaying ? <Pause size={20} fill="black" /> : <Play size={20} fill="black" className="ml-0.5" />}
@@ -110,6 +113,7 @@ export const Player = memo(function Player({
             
             <button
               onClick={onNext}
+              aria-label="Projet suivant"
               className="text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all cursor-pointer"
             >
               <SkipForward size={20} />
@@ -128,6 +132,7 @@ export const Player = memo(function Player({
         <div className="flex items-center justify-end gap-2 flex-1">
           <button
             onClick={onExpand}
+            aria-label={isProjectViewOpen ? 'Réduire le projet' : 'Agrandir le projet'}
             className="bg-green-500 hover:bg-green-400 hover:scale-120 active:scale-95 rounded-full p-2 transition-all shadow-lg shadow-green-500/50 cursor-pointer"
           >
             {isProjectViewOpen ? <Minimize2 size={20} className="text-black" /> : <Maximize2 size={20} className="text-black" />}

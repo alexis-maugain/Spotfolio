@@ -162,6 +162,7 @@ export default function App() {
             {/* Profile Avatar */}
             <button
               onClick={() => setActiveView('about')}
+              aria-label="Voir le profil"
               className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white flex-shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-150"
             >
               <img src="./assets/logo.webp" alt="Profile" className="w-8 h-8 rounded-full object-cover" loading="lazy" />

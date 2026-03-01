@@ -31,6 +31,7 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
         >
           <button
             className="w-14 h-14 rounded-full flex items-center justify-center shadow-xl cursor-pointer bg-green-500 hover:scale-105 active:scale-95 transition-transform duration-150"
+            aria-label={`Lire ${project.title}`}
             onClick={(e) => {
               e.stopPropagation();
               onPlay(project);
@@ -46,6 +47,7 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
             e.stopPropagation();
             onToggleFavorite(project.id);
           }}
+          aria-label={isFavorite ? `Retirer ${project.title} des favoris` : `Ajouter ${project.title} aux favoris`}
           className={`absolute top-2 right-2 w-8 h-8 rounded-full flex items-center justify-center transition-all cursor-pointer ${
             isFavorite 
               ? 'bg-green-500 text-black' 
