@@ -67,7 +67,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'RocamaTour',
     category: 'UX/UI Design',
-    cover: './assets/projets/rocamatour/cover.png',
+    cover: './assets/projets/rocamatour/cover.webp',
     images: [
       './assets/projets/rocamatour/hero.webp',
       './assets/projets/rocamatour/post1.webp',

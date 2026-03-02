@@ -321,7 +321,7 @@ export default function App() {
         >
           {/* Avatar contact */}
           <img
-            src="./assets/avatar-contact.png"
+            src="./assets/avatar-contact.webp"
             alt="Avatar contact"
             className="hidden md:block absolute right-0 top-0 w-48 h-auto"
             style={{ transform: 'translateX(110%)' }}

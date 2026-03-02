@@ -24,7 +24,7 @@ export function WrappedModal({ isOpen, onClose }: WrappedModalProps) {
 
       {/* Image */}
       <img
-        src="./assets/wrapped2025.png"
+        src="./assets/wrapped2025.webp"
         alt="Wrapped 2025"
         className="max-w-full max-h-full object-contain rounded-lg animate-fade-in-scale"
         onClick={(e) => e.stopPropagation()}
