@@ -272,7 +272,7 @@ export default function App() {
               </div>
             </div>
             <p className="text-sm text-neutral-400 md:hidden mt-2">
-              Designer &amp; Développeur · 15.2K vues · {projects.length} projets réalisés
+              UX/UI Designer · 237 795 auditeurs mentuels · {projects.length} projets
             </p>
           </div>
 
