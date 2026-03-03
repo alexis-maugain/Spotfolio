@@ -7,7 +7,7 @@ export const projects: Project[] = [
     {
     id: '1',
     title: 'PokeDuel',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/pokeduel/mockup.webp',
     images: [
       './assets/projets/pokeduel/accueil.webp',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     id: '3',
     title: 'Olive Oil',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/olive-oil/mockup.webp',
     images: [
       './assets/projets/olive-oil/hero.webp',
@@ -87,7 +87,7 @@ export const projects: Project[] = [
   {
     id: '5',
     title: 'Lebonsurfeur',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/subway-surfer/cover.webp',
     images: [
       './assets/projets/subway-surfer/jetpack.webp',
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     tools: ['After Effects', 'Premiere Pro','WordPress', 'Figma', 'Blender'],
     description: 'Il nous a été demandé de créer, développer et promouvoir un site web e-commerce inspiré des plateformes comme Le Bon Coin, Vinted, … adapté à l\'univers d\'un jeu vidéo emblématique de notre choix (par exemple : Mario, Zelda, etc.).',
     problem: 'Concevoir un site e-commerce crédible et cohérent dans l\'univers de Subway Surfer, tout en intégrant des fonctionnalités de vente en ligne classiques. Le défi était d\'allier l\'aspect ludique du jeu avec une expérience d\'achat fonctionnelle et intuitive.',
-    process: 'Choix de l\'univers Subway Surfer, conception des maquettes UI/UX sur Figma, modélisation d\'objets 3D sur Blender pour enrichir le site, développement du site sur WordPress, création de vidéos promotionnelles avec After Effects et Premiere Pro, réalisation du storyboard et production du contenu visuel.',
+    process: 'Choix de l\'univers Subway Surfer, conception des maquettes UX/UI sur Figma, modélisation d\'objets 3D sur Blender pour enrichir le site, développement du site sur WordPress, création de vidéos promotionnelles avec After Effects et Premiere Pro, réalisation du storyboard et production du contenu visuel.',
     color: '#F59E0B'
   },
 
@@ -151,7 +151,7 @@ export const projects: Project[] = [
   {
     id: '8',
     title: 'Danniel Wellington',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/danniel-wellington/Cover.webp',
     images: [
       './assets/projets/danniel-wellington/pages.webp',
@@ -170,7 +170,7 @@ export const projects: Project[] = [
   {
     id: '9',
     title: 'Le Bar\'Bare',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/lebarbare/logo.webp',
     images: [
       './assets/projets/lebarbare/communication.webp',
@@ -194,7 +194,7 @@ export const projects: Project[] = [
   {
     id: '10',
     title: 'Digital Clean Up Day',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/digital-cleanup/cover.webp',
     images: [
       './assets/projets/digital-cleanup/hero.webp',
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     {
     id: '11', 
     title: 'Fief des Vins',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/fiefdesvins/cover.webp',
     images: [
       './assets/projets/fiefdesvins/fiefdesvins.webp',
@@ -252,7 +252,7 @@ export const projects: Project[] = [
   {
     id: '13',
     title: 'Sauce Martin',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/sauce-martin/cover.webp',
     images: [
       './assets/projets/sauce-martin/audit.webp',
@@ -292,7 +292,7 @@ export const projects: Project[] = [
   {
     id: '15',
     title: 'Unis Vers Tchouk',
-    category: 'UI/UX Design',
+    category: 'UX/UI Design',
     cover: './assets/projets/unis-vers-tchouk/cover.webp',
     images: [
       './assets/projets/unis-vers-tchouk/hero.webp',
