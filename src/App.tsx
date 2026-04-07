@@ -301,8 +301,8 @@ export default function App() {
             {/* Télécharger le CV */}
             <div className="mt-12 pt-8 border-t border-neutral-800">
               <a
-                href="./assets/CV_Alexis_Maugain.pdf"
-                download="CV_Alexis_Maugain"
+                href="./assets/MaugainAlexis_CV.pdf"
+                download="MaugainAlexis_CV"
                 className="inline-flex items-center gap-3 px-6 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors group"
               >
                 <Download size={20} />
