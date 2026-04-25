@@ -267,7 +267,8 @@ export const projects: Project[] = [
     problem: 'Le site existant de Sauce Martin ne reflétait pas l\'identité dynamique et artisanale de la marque. L\'ergonomie était peu optimisée, le catalogue produit difficile à parcourir et l\'expérience utilisateur globale nécessitait une modernisation complète.',
     process: 'Audit du site existant, identification des points d\'amélioration, benchmark, création d\'une identité visuelle cohérente, création de maquettes sur Figma.',
     color: 'rgb(2, 97, 57)',
-    protoLink: 'https://www.figma.com/proto/kJ5gb6X5dif0RjgCI8ti3d/Prototype?node-id=111-26225&t=L3eCLjz8xXodrPm2-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A3'
+    protoLink: 'https://www.figma.com/proto/kJ5gb6X5dif0RjgCI8ti3d/Prototype?node-id=111-26225&t=L3eCLjz8xXodrPm2-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A3',
+    podcast: '/assets/Podcast/SauceMartin.mp3'
   },
 
   {

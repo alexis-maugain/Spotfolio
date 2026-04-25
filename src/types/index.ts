@@ -11,6 +11,7 @@ export interface Project {
   process: string;
   color: string;
   protoLink?: string;
+  podcast?: string;
 }
 
 export interface Playlist {
