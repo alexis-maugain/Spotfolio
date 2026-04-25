@@ -16,19 +16,28 @@ export function WelcomeBanner() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-start gap-4">
-      {/* Avatar */}
+      <div className="relative z-10 block">
+      {/* Avatar Desktop */}
       <div className="hidden md:block absolute right-6 z-10" style={{ bottom: '-10rem', right: '8rem' }}>
         <img src="./assets/mainavatar.svg" alt="Avatar" style={{ width: '190px', height: 'auto' }} />
       </div>
 
-        <div className="flex-1">
-          <h1
-            className="text-white mb-2 text-2xl md:text-[2.5rem]"
-            style={{ fontWeight: 700, lineHeight: 1.2 }}
-          >
-            Bienvenue dans mon univers.
-          </h1>
+        <div className="w-full">
+          <div className="flex items-center gap-4 mb-2">
+            {/* Avatar Mobile */}
+            <img 
+              src="./assets/avatarmobile.svg" 
+              alt="Avatar" 
+              className="block md:hidden flex-shrink-0" 
+              style={{ width: '68px', height: 'auto' }}
+            />
+            <h1
+              className="text-white text-2xl md:text-[2.5rem]"
+              style={{ fontWeight: 700, lineHeight: 1.2 }}
+            >
+              Bienvenue dans mon univers.
+            </h1>
+          </div>
           
           <p className="text-white/90 text-sm md:text-lg">
             Ici, chaque projet est un morceau, chaque compétence une note, et chaque domaine une playlist.
