@@ -19,7 +19,7 @@ export function WelcomeBanner() {
       <div className="relative z-10 flex items-start gap-4">
       {/* Avatar */}
       <div className="hidden md:block absolute right-6 z-10" style={{ bottom: '-10rem', right: '8rem' }}>
-        <img src="./assets/avatar.svg" alt="Avatar" className="w-48 h-auto" />
+        <img src="./assets/mainavatar.svg" alt="Avatar" style={{ width: '190px', height: 'auto' }} />
       </div>
 
         <div className="flex-1">
