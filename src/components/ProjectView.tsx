@@ -166,7 +166,7 @@ export function ProjectView({
                   className="flex items-center gap-2 md:gap-4 text-xs md:text-sm text-white/80 animate-fade-in"
                   style={{ animationDelay: '0.1s' }}
                 >
-                  <span>{linkifyText(project.role)}</span>
+                  <span>{linkifyText(project.date)}</span>
                   <span>•</span>
                   <span>{project.category}</span>
                 </div>

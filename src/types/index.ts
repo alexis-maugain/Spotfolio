@@ -4,7 +4,7 @@ export interface Project {
   category: string;
   cover: string;
   images: string[];
-  role: string;
+  date: string;
   tools: string[];
   description: string;
   problem: string;
