@@ -146,6 +146,7 @@ export const projects: Project[] = [
     problem: 'La pollution numérique est un sujet peu connu du grand public, notamment chez les jeunes. Il fallait trouver un moyen ludique et engageant de sensibiliser à cette problématique, tout en rendant le message accessible et mémorable à travers le jeu vidéo.',
     process: 'Conception du game design et du personnage Zippy, création des assets graphiques et de l\'affiche promotionnelle sur Figma, développement du jeu en JavaScript avec la librairie P5Play.js, intégration du HTML/CSS avec Tailwind, tests de gameplay et équilibrage des niveaux, création du site vitrine.',
     color: '#EC4899',
+    award: 'Projet gagnant de la Nuit du Code',
     protoLink: 'https://alexis-maugain.github.io/ZippyTheMouse/'
   },
   {

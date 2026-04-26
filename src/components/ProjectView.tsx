@@ -169,6 +169,12 @@ export function ProjectView({
                   <span>{linkifyText(project.date)}</span>
                   <span>•</span>
                   <span>{project.category}</span>
+                  {project.award && (
+                    <>
+                      <span>•</span>
+                      <span>{project.award}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

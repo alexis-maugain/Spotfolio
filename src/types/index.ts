@@ -12,6 +12,7 @@ export interface Project {
   color: string;
   protoLink?: string;
   podcast?: string;
+  award?: string;
 }
 
 export interface Playlist {
