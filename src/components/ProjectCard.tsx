@@ -1,4 +1,4 @@
-import { Play, Heart } from 'lucide-react';
+import { Play, Heart, Mic2 } from 'lucide-react';
 import { Project } from '../types';
 import { memo } from 'react';
 
@@ -40,6 +40,14 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
             <Play size={24} fill="black" className="text-black ml-0.5" />
           </button>
         </div>
+
+        {/* Podcast Badge */}
+        {project.podcast && (
+          <div style={{ position: 'absolute', bottom: 8, left: 8, display: 'flex', alignItems: 'center', gap: 4, background: 'rgba(0,0,0,0.7)', color: '#fff', fontSize: 10, fontWeight: 600, padding: '3px 8px', borderRadius: 999, backdropFilter: 'blur(4px)', whiteSpace: 'nowrap' }}>
+            <Mic2 size={10} />
+            Podcast dispo
+          </div>
+        )}
 
         {/* Favorite Button */}
         <button
