@@ -6,6 +6,7 @@ export function WrappedBanner({ onStart }: WrappedBannerProps) {
   return (
     <div
       className="relative bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-2xl p-8 md:p-12 overflow-hidden mb-10 cursor-pointer group animate-fade-in"
+      data-gtm="wrapped-banner"
       onClick={onStart}
     >
       {/* Decorative Elements */}
