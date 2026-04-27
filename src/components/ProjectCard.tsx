@@ -14,6 +14,8 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
   return (
     <div
       className="group relative bg-neutral-900 rounded-lg p-4 hover:bg-neutral-800 transition-colors duration-200 cursor-pointer"
+      data-gtm="project-card"
+      data-gtm-title={project.title}
       onClick={() => onPlay(project)}
     >
       {/* Cover Image */}
