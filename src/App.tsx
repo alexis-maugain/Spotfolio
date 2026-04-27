@@ -278,10 +278,10 @@ export default function App() {
 
           <div className="space-y-6 text-neutral-300 pb-12 md:pb-16">
             <p>
-              Pour moi, chaque projet est un mix entre créativité et logique. J’aime quand le design est beau, mais surtout quand il fonctionne vraiment. Quand tout est fluide. Quand l’utilisateur n’a même pas besoin de réfléchir pour comprendre où cliquer.
+              Étudiant, spécialisé en création numérique, je suis à la recherche d'une alternance en UX/UI Design pour la rentrée en master à l'École de Design de Nantes Atlantique en septembre 2026. Le rythme de l'alternance est de 6 semaines en entreprise / 3 semaines à l'école.
             </p>
             <p>
-              Étudiant, spécialisé en création numérique, je façonne des interfaces claires, esthétiques et pensées pour l'utilisateur. De l'idée à la réalisation, chaque élément est travaillé comme une note juste : à sa place, utile et cohérente dans l'ensemble.
+              Pour moi, chaque projet est un mix entre créativité et logique. J’aime quand le design est beau, mais surtout quand il fonctionne vraiment. Quand tout est fluide. Quand l’utilisateur n’a même pas besoin de réfléchir pour comprendre où cliquer.
             </p>
             <p>
               Mon objectif ? Créer des expériences digitales qui donnent envie de rester, d’explorer… et de revenir. Un peu comme ce morceau que tu mets en boucle sans t’en rendre compte.
