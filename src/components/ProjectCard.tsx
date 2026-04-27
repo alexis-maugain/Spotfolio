@@ -42,6 +42,12 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
             aria-label={`Lire ${project.title}`}
             onClick={(e) => {
               e.stopPropagation();
+              (window as any).dataLayer = (window as any).dataLayer || [];
+              (window as any).dataLayer.push({
+                event: 'project_click',
+                project_name: project.title,
+                project_category: project.category,
+              });
               onPlay(project);
             }}
           >
