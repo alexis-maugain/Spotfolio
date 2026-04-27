@@ -82,7 +82,7 @@ export default function App() {
   const getViewTitle = (): string => {
     if (activeView === 'home') return 'Accueil';
     if (activeView === 'all') return 'Tous les singles';
-    if (activeView === 'favorites') return 'Mes Favoris';
+    if (activeView === 'favorites') return 'Vos Favoris';
     if (activeView === 'about') return 'À propos';
     if (activeView === 'contact') return 'Contact';
     const playlist = playlists.find((pl) => pl.id === activeView);
@@ -133,7 +133,7 @@ export default function App() {
   
   const playlistsData = useMemo(() => [
     { id: 'all', title: 'Tous les singles', gradient: '#EC4899, #8B5CF6', cover: projects[0]?.cover },
-    { id: 'favorites', title: 'Mes Favoris', gradient: '#10B981, #059669', cover: projects[3]?.cover },
+    { id: 'favorites', title: 'Vos Favoris', gradient: '#10B981, #059669', cover: projects[3]?.cover },
     { id: 'top-france', title: 'Top France', gradient: '#1DB954, #1ed760', cover: projects[11]?.cover },
     { id: 'ui-ux', title: 'UX/UI Design', gradient: '#9333EA, #C026D3', cover: projects[12]?.cover },
     { id: 'dev', title: 'Dev', gradient: '#3B82F6, #06B6D4', cover: projects[6]?.cover },
