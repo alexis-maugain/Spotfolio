@@ -14,9 +14,15 @@ export const ProjectCard = memo(function ProjectCard({ project, onPlay, onToggle
   return (
     <div
       className="group relative bg-neutral-900 rounded-lg p-4 hover:bg-neutral-800 transition-colors duration-200 cursor-pointer"
-      data-gtm="project-card"
-      data-gtm-title={project.title}
-      onClick={() => onPlay(project)}
+      onClick={() => {
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({
+          event: 'project_click',
+          project_name: project.title,
+          project_category: project.category,
+        });
+        onPlay(project);
+      }}
     >
       {/* Cover Image */}
       <div className="relative mb-4 aspect-square rounded-md overflow-hidden bg-neutral-800">
