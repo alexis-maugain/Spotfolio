@@ -1,9 +1,29 @@
 
-  import { defineConfig } from 'vite';
+  import { defineConfig, Plugin } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
-  export default defineConfig({  base: '/',    plugins: [react()],
+  // Inject preload hints for CSS and modulepreload for JS entry to reduce render-blocking
+  function preloadHintsPlugin(): Plugin {
+    return {
+      name: 'preload-hints',
+      transformIndexHtml(html) {
+        // Add <link rel="preload"> before each CSS stylesheet link
+        let result = html.replace(
+          /(<link rel="stylesheet"[^>]+href="([^"]+\.css)"[^>]*>)/g,
+          '<link rel="preload" as="style" href="$2">$1'
+        );
+        // Add <link rel="modulepreload"> before the main module script
+        result = result.replace(
+          /(<script type="module"[^>]+src="([^"]+\.js)"[^>]*>)/g,
+          '<link rel="modulepreload" href="$2">$1'
+        );
+        return result;
+      },
+    };
+  }
+
+  export default defineConfig({  base: '/',    plugins: [react(), preloadHintsPlugin()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
