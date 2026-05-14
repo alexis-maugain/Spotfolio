@@ -8,10 +8,14 @@
     return {
       name: 'preload-hints',
       transformIndexHtml(html) {
-        // Add <link rel="preload"> before each CSS stylesheet link
+        // Add <link rel="preload"> before each CSS stylesheet link, preserving crossorigin
         let result = html.replace(
-          /(<link rel="stylesheet"[^>]+href="([^"]+\.css)"[^>]*>)/g,
-          '<link rel="preload" as="style" href="$2">$1'
+          /<link rel="stylesheet"([^>]*?)href="([^"]+\.css)"([^>]*?)>/g,
+          (match, before, href, after) => {
+            const hasCrossorigin = /crossorigin/.test(before + after);
+            const crossorigin = hasCrossorigin ? ' crossorigin' : '';
+            return `<link rel="preload" as="style"${crossorigin} href="${href}">${match}`;
+          }
         );
         // Add <link rel="modulepreload"> before the main module script
         result = result.replace(
