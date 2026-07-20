@@ -15,7 +15,7 @@ export const projects: Project[] = [
       './assets/projets/pokeduel/connexion.webp',
       './assets/projets/pokeduel/Profil.webp',
       './assets/projets/pokeduel/map.webp',
-      './assets/projets/pokeduel/message.webp',
+      './assets/projets/pokeduel/message.webp'
 
     ],
     date: '2023',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     category: 'Developpement Web & 3D',
     cover: './assets/projets/vr/vr.webp',
     images: [
-      './assets/projets/vr/vr.webp',
+      './assets/projets/vr/vr.webp'
     ],
     date: '2025',
     tools: ['HTML', 'A-Frame', 'Poly.pizza', 'Sketchfab'],
@@ -41,25 +41,6 @@ export const projects: Project[] = [
     process: 'Analyse du style artistique de référence, recherche et sélection de modèles 3D sur Poly.pizza et Sketchfab, mise en place de la scène VR avec A-Frame en HTML, optimisation des assets 3D pour le web, tests sur différents navigateurs et appareils, déploiement sur GitHub Pages.',
     color: '#d53d3dff',
     protoLink: 'https://alexis-maugain.github.io/VR/'
-  },
-
-  {
-    id: '3',
-    title: 'Olive Oil',
-    category: 'UX/UI Design',
-    cover: './assets/projets/olive-oil/mockup.webp',
-    images: [
-      './assets/projets/olive-oil/hero.webp',
-      './assets/projets/olive-oil/Produit.webp',
-      './assets/projets/olive-oil/valeurs.webp',
-      './assets/projets/olive-oil/contact.webp',
-    ],
-    date: '2023',
-    tools: ['Figma'],
-    description: 'Olive Oil, marque d\'huile d\'olive 100 % italienne, lance sa nouvelle huile premium avec des ingrédients haut de gamme. Pour accompagner ce lancement, ils souhaitent créer un site internet reflétant leur encrage territorial ainsi que l\'univers prestigieux de la marque, destiné à une clientèle exigeante. Le design du site devra être élégant, moderne et raffiné, tout en respectant l\'identité visuelle existante (couleurs, typographie, logo).Le contenu présentera de manière claire et originale la marque, ses valeurs et son produit. L\'expérience utilisateur devra inciter à l’achat, tout en véhiculant une ambiance exclusive et sophistiquée.',
-    problem: 'La marque Olive Oil souhaitait lancer un nouveau produit premium mais ne disposait pas d\'une vitrine digitale à la hauteur de son positionnement haut de gamme. Le site devait transmettre une image de luxe et d\'authenticité italienne tout en incitant à l\'achat.',
-    process: 'Analyse de l\'identité visuelle existante et du positionnement de la marque, benchmark de sites premium dans le secteur alimentaire, conception d\'une one page élégante sur Figma avec une hiérarchie visuelle travaillée, choix typographiques et chromatiques raffinés, mise en avant du produit et des valeurs de la marque.',
-    color: '#ff1fe5ff'
   },
 
 
@@ -72,7 +53,7 @@ export const projects: Project[] = [
       './assets/projets/rocamatour/hero.webp',
       './assets/projets/rocamatour/post1.webp',
       './assets/projets/rocamatour/post2.webp',
-      './assets/projets/rocamatour/motion_rocamatour.mp4',
+      './assets/projets/rocamatour/motion_rocamatour.mp4'
 
     ],
     date: '2025',
@@ -96,7 +77,7 @@ export const projects: Project[] = [
       './assets/projets/subway-surfer/objets3D_1.webp',
       './assets/projets/subway-surfer/objets3D_2.webp',
       './assets/projets/subway-surfer/storyboard.webp',
-      './assets/projets/subway-surfer/skate-story.mp4',
+      './assets/projets/subway-surfer/skate-story.mp4'
 
 
     ],
@@ -116,7 +97,7 @@ export const projects: Project[] = [
     images: [
       './assets/projets/livre-recette/couverture.webp',
       './assets/projets/livre-recette/page-recette.webp',
-      './assets/projets/livre-recette/Sommaire.webp',
+      './assets/projets/livre-recette/Sommaire.webp'
     ],
     date: '2025',
     tools: ['Indesign'],
@@ -138,7 +119,7 @@ export const projects: Project[] = [
       './assets/projets/nuitcode/intro.webp',
       './assets/projets/nuitcode/touches.webp',
       './assets/projets/nuitcode/trophées.webp',
-      './assets/projets/nuitcode/Affiche.webp',
+      './assets/projets/nuitcode/Affiche.webp'
     ],
     date: '2025',
     tools: ['PSPlay.js', 'HTML', 'CSS', 'Tailwind', 'JAVASCRIPT', 'Figma'],
@@ -158,7 +139,7 @@ export const projects: Project[] = [
       './assets/projets/danniel-wellington/pages.webp',
       './assets/projets/danniel-wellington/montres.webp',
       './assets/projets/danniel-wellington/avis.webp',
-      './assets/projets/danniel-wellington/footer.webp',
+      './assets/projets/danniel-wellington/footer.webp'
 
     ],
     date: '2024',
@@ -180,7 +161,7 @@ export const projects: Project[] = [
       './assets/projets/lebarbare/couleurs.webp',
       './assets/projets/lebarbare/maquette.webp',
       './assets/projets/lebarbare/Quête du jour.webp',
-      './assets/projets/lebarbare/Affiche.webp',
+      './assets/projets/lebarbare/Affiche.webp'
     ],
     date: '2024',
     tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
@@ -202,7 +183,7 @@ export const projects: Project[] = [
       './assets/projets/digital-cleanup/Newsletter.webp',
       './assets/projets/digital-cleanup/wireframe.webp',
       './assets/projets/digital-cleanup/Footer.webp',
-      './assets/projets/digital-cleanup/motion_format-desktop.mp4',
+      './assets/projets/digital-cleanup/motion_format-desktop.mp4'
     ],
     date: '2025',
     tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'After Effects', 'Premiere Pro'],
@@ -221,7 +202,7 @@ export const projects: Project[] = [
       './assets/projets/fiefdesvins/fiefdesvins.webp',
       './assets/projets/fiefdesvins/hero.webp',
       './assets/projets/fiefdesvins/contact.webp',
-      './assets/projets/fiefdesvins/livraison-entreprise.webp',
+      './assets/projets/fiefdesvins/livraison-entreprise.webp'
     ],
     date: '2025',
     tools: ['Figma', 'WordPress'],
@@ -240,7 +221,7 @@ export const projects: Project[] = [
     images: [
       './assets/projets/carrefour-club/storyboard_versions.webp',
       './assets/projets/carrefour-club/storyboard_final.webp',
-      './assets/projets/carrefour-club/vidéo.mp4',
+      './assets/projets/carrefour-club/vidéo.mp4'
     ],
     date: '2025',
     tools: ['Adobe Illustrator', 'After Effects'],
@@ -259,7 +240,7 @@ export const projects: Project[] = [
       './assets/projets/sauce-martin/audit.webp',
       './assets/projets/sauce-martin/catalogue.webp',
       './assets/projets/sauce-martin/pimentomètre.webp',
-      './assets/projets/sauce-martin/prototypes.webp',
+      './assets/projets/sauce-martin/prototypes.webp'
 
     ],
     date: '2025',
@@ -280,7 +261,7 @@ export const projects: Project[] = [
     images: [
       './assets/projets/lecube/hotel.webp',
       './assets/projets/lecube/avion.webp',
-      './assets/projets/lecube/storyboard.webp',
+      './assets/projets/lecube/storyboard.webp'
     ],
     date: '2025',
     tools: ['HTML', 'Figma', 'Premiere Pro'],
@@ -301,7 +282,7 @@ export const projects: Project[] = [
       './assets/projets/unis-vers-tchouk/newsletter.webp',
       './assets/projets/unis-vers-tchouk/footer.webp',
       './assets/projets/unis-vers-tchouk/prototype.webp',
-      './assets/projets/unis-vers-tchouk/posts.webp',
+      './assets/projets/unis-vers-tchouk/posts.webp'
 
     ],
     date: '2026',
@@ -313,7 +294,27 @@ export const projects: Project[] = [
     protoLink: 'https://www.figma.com/proto/maZQrDouqXS88c9zEl0ufB/Alexis_Armand_Matth%C3%A9o_Unis-vers-tchouk--Copy-?node-id=257-3506&t=L3eCLjz8xXodrPm2-0&scaling=scale-down&content-scaling=fixed&page-id=254%3A1340&starting-point-node-id=257%3A3611'
   },
 
+{
+    id: '16',
+    title: 'Stage BPCE SI',
+    category: 'UX/UI Design',
+    cover: './assets/projets/BPCE/cover.png',
+    images: [
+      './assets/projets/BPCE/poste.png',
+      './assets/projets/BPCE/roadmap.png',
+      './assets/projets/BPCE/dovetail.jpeg',
+      './assets/projets/BPCE/figma.png',
+      './assets/projets/BPCE/restitution.jpeg',
 
+      './assets/projets/BPCE/meetup2.jpeg'
+    ],
+    date: '2026',
+    tools: ['Figma', 'Dovetail'],
+    description: 'Durant mon stage chez BPCE SI (4 mois), j’ai participé à la refonte d’un outil interne destiné à l’équipe UX. L’objectif était d’améliorer l’expérience utilisateur existante tout en faisant évoluer l’outil afin qu’il réponde aux besoins de nouveaux profils d’utilisateurs au sein de l’entreprise. J’ai pris en charge l’ensemble de la démarche UX, de la recherche utilisateur jusqu’à la conception des maquettes.',
+    problem: 'L’outil interne ne répondait plus pleinement aux besoins des équipes UX et n’était pas adapté à l’arrivée de nouveaux profils d’utilisateurs. Il était nécessaire de comprendre les usages actuels, d’identifier les points de friction et de concevoir une solution plus intuitive, évolutive et adaptée aux différents métiers de l’entreprise.',
+    process: 'Le projet porte sur la refonte d’un outil interne utilisé par l’équipe UX, dont l’objectif est d’améliorer l’expérience utilisateur et de le développer pour de nouveaux profils d’utilisateurs, toujours en interne à l’entreprise. Dans un premier temps, ce sont les deux lead UX et mon tuteur de stage qui m’ont briefé sur le projet. Puis, j’ai analysé la demande : identifier les objectifs, les enjeux, et comprendre les besoins utilisateurs afin d’en tirer des hypothèses. Ensuite, je leur ai proposé une méthodologie à suivre pour ce projet à l’aide d’une roadmap que j’ai réalisée. J’ai donc pu, après validation de ma méthodologie, débuter le processus de création. Cela a commencé par l’identification des profils cibles à l’aide de user stories et de personas. Une fois cela fait, j’ai commencé à préparer des entretiens utilisateurs afin de comprendre les besoins et attentes sur ce projet, qui pourraient valider mes hypothèses ou au contraire faire émerger d’autres besoins non encore identifiés. J’ai préparé ma conduite d’entretien à l’aide de l’outil Dovetail. J’ai contacté différents membres de l’équipe UX afin de récupérer les contacts nécessaires aux entretiens utilisateurs. On dit souvent qu’il faut environ 7 entretiens utilisateurs pour obtenir un échantillon suffisamment large pour en tirer des conclusions, c’est donc pour cela que j’ai appliqué cette méthode pour les deux profils cibles. J’ai ensuite contacté les différentes personnes pour réaliser ces entretiens, en envoyant également un PDF à signer pour l’accord de confidentialité, les entretiens étant enregistrés en vidéo. Durant ces échanges, je conviais parfois un UX designer pour m’aider dans la prise de notes. Une fois cette partie réalisée, j’ai trié les verbatims pour en tirer des insights. J’ai retranscrit ces insights dans une présentation que j’ai préparée afin de les restituer aux leads UX. J’y ai intégré de nombreuses données afin d’identifier les recommandations les plus importantes, celles qui reviennent souvent, et celles qui sont plus ponctuelles. Ensuite, j’ai réalisé un benchmark me permettant de comprendre ce que les concurrents directs ou indirects proposent, et également par le biais d’ancien fichier de l’équipe UX. Cela permet ensuite d’en tirer des recommandations pour les wireframes et les maquettes. Une fois cette phase d’analyse terminée, je suis passé à une phase de conception sur Figma de wireframes en reprenant le design system existant, avec plusieurs versions qui ont fait suite à des allers-retours avec d’autres UX designers ainsi que les leads UX. Puis, une fois cette partie validée, j’ai conçu les maquettes, sur lesquelles j’ai également itéré pour aboutir à la version finale. Cette maquette est à ce jour validée, mais comme je suis encore sur le projet et que j’ai prévu des tests utilisateurs prochainement, elle pourra probablement encore évoluer. Pour clôturer ce projet, je présenterai le travail lors d’un séminaire prévu fin mai à Paris devant toute l’équipe UX. Cela permettra d’avoir des retours de vive voix sur le travail que j’ai produit et de challenger certains partis pris.',
+    color: '#784F86'
+  }
 ];
 
 export const playlists: Playlist[] = [
@@ -327,7 +328,7 @@ export const playlists: Playlist[] = [
     id: 'ui-ux',
     name: 'UX/UI Design',
     icon: 'palette',
-    projects: ['15', '13', '11', '10', '8', '7', '4', '3', '5', '1']
+    projects: ['16', '15', '13', '11', '10', '8', '7', '4', '5', '1']
   },
   {
     id: 'dev',
